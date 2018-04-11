@@ -174,12 +174,12 @@
     flex-direction: column;
   }
   &__heading {
-    align-self:flex-end;
-    margin-right: 1rem;
-    background-color: $color-grey-dark-1;
-    color: $color-white;
+    // align-self:flex-end;
+    // margin-right: 1rem;
     @media only screen and (min-width: $bp-large) {
       align-self: center;
+      background-color: $color-grey-dark-1;
+      color: $color-white;
       letter-spacing: .2rem;
       text-transform: uppercase;
       font-weight: 300;
