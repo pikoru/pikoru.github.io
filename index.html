@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/icon-font.css"> <!-- Delete when build-->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <title>Portfolio | Front end web developer | Max Fritzén</title>
+    </head>
+    <body class="container">
+      <header class="header start-header">
+        <h1 class="header__title">Max Fritzén</h1>
+        <p class="header__subtitle">Front end web developer</p>
+
+      </header>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item" onclick="Scroll('bio')"><a class="navigation__link">Bio</a></li>
+
+            <!-- <li class="navigation__item"><button class="navigation__link" onclick="Scroll('work', this)">Work</button></li> -->
+            <li class="navigation__item" onclick="Scroll('interests')"><a class="navigation__link">Interests</a></li>
+            <li class="navigation__item" onclick="Scroll('work')"><a class="navigation__link" >Projects</a></li>
+            <li class="navigation__item" onclick="Scroll('skills')"><a class="navigation__link">Skills</a></li>
+            <li class="navigation__item"  onclick="Scroll('contact')"><a class="navigation__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="content">
+        <section class=" section bio" id="bio">
+            <h2 class="section__heading bio__heading">Who Am I?</h2>
+            <img src="img/portrait.png" alt="Picture of me" class="bio__img">
+            <!-- <img src="img/portrait_small.png" alt="Picture of me" class="bio__img"> -->
+            <p class="section__paragraph bio__paragraph">
+              I live in Gothenburg, Sweden and I was born a sunny day in May 1992.
+              <!-- <ul>
+                <li>Height: 186 cm</li>
+                <li>Weight: 80 kg</li>
+              </ul> -->
+              <p >
+                <span class="bio__quote">Max is an extraordinary human being, and most of all very humble</span>
+                 - Unknown source
+              </p>
+            </p>
+            <p class="section__paragraph bio__paragraph">
+              When I studied Sound Design for Game development I came across coding and I was hooked. It started with some very basic C++ and eventually I started
+              playing around in GameMaker and Unity, and somehow I found web development.
+            </p>
+            <p class="section__paragraph bio__paragraph">
+              I studied to be a full stack web-developer at Högskolan Väst in Sweden, and complements my formal education with various Udemy courses.
+              Even though I have some knowledge about back-end it's front-end which I'm most comfortable working with.
+            </p>
+
+        </section>
+
+        <section class="section interests" id="interests">
+            <h2 class="section__heading interests__heading">What I like to do</h2>
+            <p class="section__paragraph interests__paragraph">
+               I do have other interests in life besides programming, here are a few examples:
+            </p>
+            <ul class="interests__list">
+              <li class="interests__list-item">Hang out with my wonderful girlfriend</li>
+              <li class="interests__list-item">Work out at the gym</li>
+              <li class="interests__list-item"><a href="https://soundcloud.com/max-487" rel="external" target="_blank" title="I want to hear!">Make music</a></li>
+              <li class="interests__list-item">Be with friends and family</li>
+            </ul>
+        </section>
+
+        <section class="section work" id="work">
+            <h2 class="section__heading work__heading">Projects</h2>
+            <div class="work__items">
+              <!-- <a href="/projects/memorygame.html"><img src="img/memorygame_small.png" alt="" class="work__item"></a> -->
+              <!-- <a href="/projects/css-course.html"><img src="img/css-course.png" alt="" class="work__item"></a> -->
+              <a href="/projects/css-course.html"><div class="work__item work__item-css-course "><span class="work__item-text">CSS</span></div></a>
+              <a href="/projects/memorygame.html"><div class="work__item work__item-memorygame"><span class="work__item-text">Web App</span></div></a>
+              <a href="/projects/portfolio.html"><div class="work__item work__item-portfolio"><span class="work__item-text">Portfolio</span></div></a>
+              <a href="/projects/quiz.html"><div class="work__item work__item-quiz "><span class="work__item-text">Quiz</span></div></a>
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="section skills" id="skills">
+            <h2 class="section__heading skills__heading">Skills</h2>
+            <p class="section__paragraph skills__paragraph">
+              Right now my focus is
+              front end development. This is a list of things I'm comfortable working with:
+            </p>
+            <ul class="skills__list">
+              <li class="skills__list-item">HTML5</li>
+              <li class="skills__list-item">CSS3 ( Sass, BEM )</li>
+              <li class="skills__list-item">JavaScript</li>
+              <li class="skills__list-item">React</li>
+              <li class="skills__list-item">React with redux</li>
+              <li class="skills__list-item">Responsive design and development</li>
+            </ul>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section__heading contact__heading">Contact</h2>
+            <p class="section__paragraph contact__paragraph">
+              If you want a website or anything related, please send an email to:
+              <span class="contact__mail">fritzen.max@gmail.com</span>
+              (Yes, I will fix a custom mail address eventually)
+            </p>
+
+        </section>
+      </div>
+    <footer class="footer">
+      <p>
+       This page was created by me
+        &copy; 2018
+      </p>
+    </footer>
+
+    <script src="scripts/smooth-scroll.js"></script>
+    </body>
+</html>

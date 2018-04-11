@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../css/icon-font.css"> <!-- Delete when build-->
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+        <title>Portfolio | Front end web developer | Max Fritzén</title>
+    </head>
+    <body class="container">
+      <header class="header">
+        <h1 class="header__title project__header"><a href="/">Max Fritzén</a></h1>
+      </header>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="/" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a class="navigation__link" onclick="Scroll('contact', this)">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="content">
+        <section class="section project__section">
+            <h2 class="section__heading project__heading project__heading-1">Memory Game</h2>
+            <div class="project__image project__image-memory">
+
+            </div>
+            <a href="https://memorygame-maxfritzen.herokuapp.com/" class="project__link">Check it out!<i class="fa fa-angle-double-right"></i> </a>
+            <p class="section__paragraph project__paragraph">
+              While I was learning React (JavaScript-framework) I wanted to build something besides the projects I built
+              in tutorials. I took a Udemy-course, The Complete react Web Developer Course( with Redux) by Andrew Mead, which was awesome and I learned A LOT
+              but I think its important for the learning process to use the skills on my own also, and not just follow along.
+            </p>
+            <p class="section__paragraph project__paragraph">
+              So I had the idea for this game
+              and it was a fun project to work on while the main purpose was to learn React.
+              I have a ton of started projects so a goal here was also to just declare some Minimum Viable Product specifications
+              and be able to say 'Yeah, cool. Im done with this', although I still want to improve it but it's not a high priority anymore.
+            </p>
+            <p class="section__paragraph project__paragraph">
+              I realized it's also pretty easy for a somewhat JavaScript knowledgeable person to cheat but hey, I trust people.
+            </p>
+
+
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section__heading contact__heading">Contact</h2>
+            <p class="section__paragraph contact__paragraph">
+              If you want a website or anything related, please send an email to:
+              <span class="contact__mail">fritzen.max@gmail.com</span>
+              (Yes, I will fix a custom mail address eventually)
+            </p>
+
+        </section>
+      </div>
+      <footer class="footer">
+        <p>
+         This page was created by me
+          &copy; 2018
+        </p>
+      </footer>
+      <script src="../../scripts/smooth-scroll.js"></script>
+    </body>
+</html>

@@ -1,0 +1,173 @@
+.project {
+
+  &__header {
+    // height: 20vh;
+    padding: 2rem;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (min-width: $bp-large) {
+      width: 100%;
+      // align-items: center;
+      padding: 0 15rem;
+    }
+
+  }
+
+  &__heading {
+
+
+    &-1 {
+      margin-bottom: 1rem;
+      align-self: center;
+    }
+
+    &-2 {
+      align-self: flex-start;
+      padding-left: 1rem;
+    }
+  }
+
+  &__paragraph {
+
+  }
+
+  &__image {
+
+
+    // margin: 0 auto;
+
+
+
+    background-size: cover;
+    background-position: top;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.75);
+    height: 15rem;
+    // opacity: .7; // Indikerar ju faktiskt att man kan klicka på den, ifall det blir en hover-effect.
+    transition: all .5s;
+    width: 100%;
+
+    @media only screen and (min-width: $bp-large) {
+      height: 20rem;
+      // width: 20rem;
+      margin-left: 1rem;
+      // TESTAR MED img istället för background-image
+      // height: 20rem;
+      // width: 20rem;
+      // object-fit: cover; // must set both width and height
+      // display: block; // otherwise there is a white space
+    }
+
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &-memory {
+      background-image:url(../img/memorygame_small.png);
+    }
+
+    &-css-course {
+      background-image:url(../img/css-course.png);
+    }
+
+    &-portfolio {
+      background-image:url(../img/portfolio.png);
+    }
+
+    &-quiz {
+      background-image:url(../img/quiz.png);
+      background-position: center;
+    }
+  }
+
+  &__link,
+  &__link:visited {
+    animation: moveInRight 2s;
+    align-self: flex-start;
+    background-color: #f04;
+    border: 1px solid darken(#f04, 50);
+    border-radius: 3px;
+    box-shadow: inset 1px 2px 1px lighten(#B241A4, 10);
+    // color: $color-link;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    // margin: 0 auto;
+    margin: .3rem 0;
+    // margin-left: 4.3rem;
+    padding: .8rem;
+
+    @media only screen and (min-width: $bp-large) {
+      // align-self: center;
+      // height: 5rem;
+      margin-left: 1rem;
+      z-index: 0;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+        // transform: translateY(-2px);
+        // box-shadow: 0 2px 5px 0 $color-black;
+        // border: 2px solid $color-black;
+
+        &::before {
+          content: "";
+          // border: 1px solid $color-grey-light-1;
+          background: linear-gradient(
+          to right,
+          rgba(#fff, .1),
+          rgba(#fff, .7),
+          rgba(#fff, .4));
+          // height: 100%;
+          left:100%;
+          transition: all .5s;
+          width: 4rem;
+          z-index: 1;
+        }
+      }
+      &::before {
+
+        content: "";
+        // border: 1px solid $color-grey-light-1;
+        height: 100%;
+        position: absolute;
+        left: -15px;
+        z-index: 1;
+      }
+    }
+
+
+
+    &:active {
+      color: #fba032;
+      transform: translateX(5px);
+      // transform: translateY(2px);
+      // border-bottom: none;
+      // box-shadow: none;
+    }
+
+    i {
+      font-size: 2.2rem;
+      padding-left: .5rem;
+      // transform: translateY(2px);
+    }
+
+  }
+  &__link {
+    &--big {
+
+    }
+    &--small {
+      background-color: green;
+      font-size: 1.4rem;
+    }
+  }
+
+}

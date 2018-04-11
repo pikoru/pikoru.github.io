@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+        <link rel="stylesheet" href="../../css/icon-font.css"> <!-- Delete when build-->
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="../../img/favicon.png">
+        <title>Portfolio | Front end web developer | Max Fritzén</title>
+    </head>
+    <body class="container">
+      <header class="header">
+        <h1 class="header__title project__header"><a href="/">Max Fritzén</a></h1>
+      </header>
+
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="/" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a class="navigation__link" onclick="Scroll('contact', this)">Contact</a></li>
+
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="content">
+        <section class="section project__section">
+            <h2 class="section__heading project__heading project__heading-1">Advanced CSS and SASS</h2>
+            <div class="project__image project__image-css-course"></div>
+            <p class="section__paragraph project__paragraph">
+              Short: 3 different websites using 3 different css techniques.
+            </p>
+            <h3 class="project__heading project__heading-2">Float and absolute position</h3>
+            <a href="/projects/Natours"class="project__link u-margin-left">Natours<i class="fa fa-angle-double-right"></i></a>
+            <h3 class="project__heading project__heading-2">Flexbox</h3>
+            <a href="/projects/Trillo"class="project__link u-margin-left">Trillo<i class="fa fa-angle-double-right"></i></a>
+            <h3 class="project__heading project__heading-2">Grid</h3>
+            <a href="/projects/Nexter"class="project__link u-margin-left">Nexter<i class="fa fa-angle-double-right"></i></a>
+            <p class="section__paragraph project__paragraph">
+              I took a Udemy-course by Jonas Schmedtmann and learned more about CSS and SASS, which is used to style a website. By building 3 different websites I also developed my design skills,
+              and tricks to make things 'pop' like different hover effects and animations.
+            </p>
+            <p class="section__paragraph project__paragraph">
+              In the course I built 3 different websites using 3 different techniques.
+              The first one uses solely float and absolute position to position elements,
+              the second one focused on flexbox and with the last one I learned how to use the css grid system.
+              I had a pretty good understanding about float and flexbox but I still learned a lot building these websites.
+            </p>
+            <p class="section__paragraph project__paragraph">
+              Now, it's not neccessary to just use one technique when building a website but it was a good way to learn how to use the different techniques.
+              For example, building this portfolio I used grid to position the individual projects in the projects section on the start page and flexbox pretty much everywhere else.
+              I didn't build the whole site using grid because the browser support is not as good as flexbox yet,
+              but a combination of the two techniques makes positioning a lot easier.
+            </p>
+
+
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section__heading contact__heading">Contact</h2>
+            <p class="section__paragraph contact__paragraph">
+              If you want a website or anything related, please send an email to:
+              <span class="contact__mail">fritzen.max@gmail.com</span>
+              (Yes, I will fix a custom mail address eventually)
+            </p>
+
+        </section>
+      </div>
+      <footer class="footer">
+        <p>
+         This page was created by me
+          &copy; 2018
+        </p>
+      </footer>
+      <script src="../../scripts/smooth-scroll.js"></script>
+    </body>
+</html>

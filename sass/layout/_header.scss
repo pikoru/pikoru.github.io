@@ -1,0 +1,45 @@
+.header {
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   rgba(white, .9),
+  //   rgba(darkgrey, 2));
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-grey-dark-3, .9),
+    rgba($color-grey-dark-3, .6));
+
+  // background-color: $color-grey-dark-3;
+  // background-color: $color-grey-dark-2;
+  color: $color-grey-light-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  // height: 95vh;
+  // padding: 0 10rem;
+
+  &__title {
+    animation: moveInLeft .7s;
+    font-size: 4.5rem;
+    font-weight: 200;
+    margin-left: -3rem;
+
+  }
+
+  &__subtitle {
+    animation: moveInRight 8s;
+    // animation-delay: 1s;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-right: -3rem;
+  }
+}
+
+.start-header {
+  height: 98vh;
+
+  h1 {
+      animation: moveInLeft 2s;
+  }
+
+}
