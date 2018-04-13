@@ -1,7 +1,4 @@
 .navigation {
-  // display: flex;
-  // justify-content: flex-end;
-  // background-color: grey;
 
   &__checkbox {
     display: none;
@@ -9,7 +6,6 @@
 
   &__button {
     background-color: $color-white;
-    // border-radius: 50%;
     border-radius: 5px;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
     cursor: pointer;
@@ -29,6 +25,7 @@
   }
 
   &__nav {
+
     background-color: white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -40,21 +37,12 @@
     // transition-timing-function: cubic-bezier(.74, .21, .04, .97);
     position: fixed;
     top: 2rem;
-    // top: -4rem;
-    //left: 0;
     right: -100vw;
-    // right: 0;
-    // height:1rem;
-    // width: 1rem;
-    // font-size: 1px;
-    // transform: scale(0);
     z-index: 1500;
-
   }
 
   &__list {
     list-style: none;
-
   }
 
 
@@ -65,10 +53,7 @@
     &:visited {
       text-decoration: none;
     }
-    &--active {
-      color: $color-grey-dark-3;
-      font-size: 1.6rem;
-    }
+
     &:active {
       color: $color-grey-dark-3;
       font-weight: 900;
@@ -89,18 +74,23 @@
     justify-content: center;
     @media only screen and (min-width: $bp-largest) {
       padding: 3rem;
-      font-size: 1.8rem;
     }
 
     &:hover {
-      background-color: $color-grey-light-1;
+      background-color: $color-grey-light-2;
       cursor: pointer;
+
+      a {
+        cursor: pointer;
+        color: $color-grey-dark-3;
+        font-weight: 700;
+      }
     }
 
     &:active {
       background-color: $color-grey-light-2;
 
-      a {
+      a { // Reason for this is to have the same effect even if the user click beside the text
         color: $color-grey-dark-3;
         font-weight: 900;
         text-decoration: underline;
@@ -124,7 +114,7 @@
     opacity: 1;
     right: 0;
     top: 8rem;
-    font-size: 1.2rem;
+    // font-size: 1.2rem;
     // height: 8rem;
     width: 8rem;
     // transform: scale(1);
