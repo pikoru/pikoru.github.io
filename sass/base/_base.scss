@@ -9,32 +9,18 @@
 html {
   // This defines what 1rem is
   font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
-  // scroll-behavior: smooth;
+
   @media only screen and (min-width: $bp-smallest) {
     font-size: 75%; // 12 px
   }
   @media only screen and (min-width: $bp-large) {
     font-size: 87.5%; // 14px
   }
-  //
-  // @include respond(tab-port) { //width < 900?
-  //   font-size: 50%;  //1 rem = 8px, 8/16 = 50%
-  // }
-  //
-  // @include respond(big-desktop) {
-  //   font-size: 75%;  //1 rem = 12px, 12/16 = 75%
-  // }
+
 }
 
 body {
-  // animation: opacityChange 1s;
   box-sizing: border-box;
-  // padding: 3rem;
-  //
-  // @include respond(tab-port) {
-  //   padding: 0;
-  // }
-
 }
 
 img {

@@ -19,7 +19,8 @@
 
   &__heading {
     color: $color-grey-dark-1;
-    font-size: 2.4rem;
+    // font-size: 2.4rem;
+    font-size: 2.8rem;
 
     @media only screen and (min-width: $bp-large) {
 
@@ -27,8 +28,8 @@
   }
 
   &__paragraph {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 1rem;
-
+    line-height: 2.2rem;
   }
 }

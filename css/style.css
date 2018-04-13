@@ -300,10 +300,11 @@ body {
       margin: 1rem 2rem; } }
   .section__heading {
     color: #777;
-    font-size: 2.4rem; }
+    font-size: 2.8rem; }
   .section__paragraph {
-    font-size: 1.2rem;
-    padding: 1rem; }
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 2.2rem; }
 
 @media only screen and (min-width: 62.5em) {
   .bio {
@@ -340,12 +341,12 @@ body {
 
 .bio__quote {
   font-style: italic;
-  max-width: 60%;
+  max-width: 80%;
   position: relative; }
-  .bio__quote::before {
+  .bio__quote span::before {
     content: "\201C";
     font-size: 2.2rem; }
-  .bio__quote::after {
+  .bio__quote span::after {
     content: "\201D";
     font-size: 2.2rem; }
 
@@ -358,7 +359,7 @@ body {
       justify-content: flex-start; } }
   @media only screen and (min-width: 62.5em) {
     .interests__heading {
-      font-size: 3.2rem;
+      font-size: 4.2rem;
       width: 40%; } }
   @media only screen and (min-width: 62.5em) {
     .interests__paragraph {
