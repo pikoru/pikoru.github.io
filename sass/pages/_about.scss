@@ -21,34 +21,28 @@
 
 
 .bio {
-  // box-shadow: 5px 0 5px 0px rgba($color-grey-dark-3, .75);
-
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
 
   @media only screen and (min-width: $bp-large) {
     flex-direction: column;
-    flex-basis: 22rem;
+    // flex-basis: 22rem;
+    // width: 22rem;
     align-self: flex-end;
     min-height: 15rem;
     position: relative;
-    // width: 40%;
+
+    width: 30%;
   }
 
   &__heading {
     @media only screen and (min-width: $bp-large) {
       align-self:flex-start;
       margin-left: .5rem;
-      // letter-spacing: .5rem;
-      // text-transform: uppercase;
-      // font-weight: 300;
+
     }
   }
 
   &__paragraph {
-    // padding: 1rem;
+
     @media only screen and (min-width: $bp-large) {
 
     }
@@ -56,16 +50,12 @@
   }
   &__img {
     opacity: .5;
-    // border-top-right-radius: 50px;
-    // border-top-left-radius: 50px;
-    // border-bottom-right-radius: 50px;
     border-radius: 50px;
     height: 7rem;
     width: 7rem;
     object-fit: cover; // must set both width and height
     display: block; // otherwise there is a white space
     filter: grayscale(100%);
-    // filter: grayscale(100%) blur(3px);
     transition: all 1s;
     @media only screen and (min-width: $bp-large) {
       height:5rem;
@@ -73,7 +63,6 @@
       position: absolute;
       top: 5px;
       right: 15px;
-      // align-self: flex-start;
     }
 
     &:hover {
@@ -84,21 +73,16 @@
 
   &__quote {
     font-style: italic;
-    // max-width: 60%;
     max-width: 80%;
     position: relative;
     span {
       &::before {
         content:"\201C";
         font-size: 2.2rem;
-        // position: absolute;
-        // top: 0;
       }
       &::after {
         content:"\201D";
         font-size: 2.2rem;
-        // position: absolute;
-        // top: 0;
       }
     }
 
@@ -106,57 +90,46 @@
 }
 
 .interests {
-  // display: flex;
+
   justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
   @media only screen and (min-width: $bp-large) {
-    // position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    // flex-direction: column;
-    // width: 40%;
+    align-self: flex-end;
+
+    width: 60%;
+    // width: 65%;
+    height: 45rem;
+    margin-left: auto;
   }
 
   &__heading {
+
     @media only screen and (min-width: $bp-large) {
-      // font-size: 3.2rem;
-      font-size: 4.2rem;
-      // align-self: center;
-      // justify-self: center;
+      // font-size: 4.2rem;
+      font-size: 6.2rem;
       width: 40%;
-      // border: 1px solid black;
     }
   }
 
   &__paragraph {
-    // padding: 1rem;
+
     @media only screen and (min-width: $bp-large) {
-      // border: 1px solid black;
       width: 40%;
-      // margin-bottom: -6rem;
-      // position: absolute;
-      // top: 0;
-      // margin-left: 6rem;
-      // margin-bottom: 2rem;
+
+      align-self: flex-end;
+      margin: 2.5rem 0;
+      margin-left: -2rem;
     }
   }
 
   &__list {
-    list-style: none;
 
-    // padding-left: 2rem;
+    list-style: none;
     @media only screen and (min-width: $bp-large) {
-      // align-self: flex-end;
       justify-self: end;
-      // border: 1px solid black;
       display: flex;
-      // flex-wrap: wrap;
-      // align-items: flex-end;
-      // justify-content: flex-end;
-      // margin: 1rem;
-      // width: 50%;
     }
 
   }
@@ -165,22 +138,18 @@
 
     border-left: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
-    // font-size: 1.2rem;
     padding: 1rem;
   }
 }
 
 .skills {
-  // display: flex;
+
   justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
   @media only screen and (min-width: $bp-large) {
     flex-direction: column;
   }
   &__heading {
-    // align-self:flex-end;
-    // margin-right: 1rem;
+
     @media only screen and (min-width: $bp-large) {
       align-self: center;
       background-color: $color-grey-dark-1;
@@ -192,20 +161,18 @@
   }
 
   &__paragraph {
-    // padding: 1rem;
+
   }
 
   &__list {
-    list-style: none;
-    // padding-left: 2rem;
 
+    list-style: none;
   }
 
   &__list-item {
 
     border-left: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
-    // font-size: 1.2rem;
     padding: 1rem;
   }
 }
@@ -218,28 +185,22 @@
   }
 
   &__heading {
-    // align-self: flex-start;
-    // margin-left: -6rem;
+
   }
 
   &__paragraph {
-    // padding: 1rem;
-    // text-align: center;
+
     p {
       padding: 1rem;
     }
   }
 
   &__mail {
-    // color: #B241A4;
     color: #B28204;
-    // color: #fba032;
-    // color: #f04;
     display: flex;
     font-size: 1.4rem;
     // justify-content: center;
     padding: 1rem;
-
 
     @media only screen and (min-width: $bp-large) {
       // justify-content: flex-start;
@@ -248,10 +209,9 @@
 }
 
 .work {
+
   display: block;
-  // justify-content: center;
-  // flex-direction: column;
-  // align-items: center;
+
   @media only screen and (min-width: $bp-large) {
     width: 100%;
     flex-direction: row;
@@ -263,9 +223,8 @@
   }
 
   &__items {
-    display: grid;
 
-    // grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); // This line makes it responsive
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); // This line makes it responsive
     padding: .5rem;
     max-width: 700px;
@@ -279,33 +238,29 @@
     justify-content: center;
     align-items: center;
     height: 15rem;
-    // width: 25rem;
-    // border: 1px solid black;
     border-radius: 5px;
     border: 1px solid black;
-    // border-radius: 3px;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
     margin: .2rem auto;
     opacity: .8;
     grid-column: min-content;
+
     @media only screen and (min-width: $bp-large) {
 
     }
 
     &-text {
+
       color: $color-black;
       font-size: 2.2rem;
       font-weight: 600;
       letter-spacing: .4rem;
       text-transform: uppercase;
       text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-
-      // NÄR STÖRRE SKÄRM
-          // transform: rotate(45deg);
     }
 
     &-css-course {
-      // background-image: url('../img/css-course.png');
+
       background-image: linear-gradient(
       to right bottom,
       rgba( 200, 255, 200, .2),
@@ -314,7 +269,6 @@
     }
 
     &-memorygame {
-      // background-image: url('../img/memorygame_small.png');
       background-image: linear-gradient(
       to right bottom,
       rgba( 0, 150, 255, .7),
@@ -324,7 +278,7 @@
     }
 
     &-portfolio {
-      // background-image: url('../img/portfolio.png');
+
       background-image: linear-gradient(
       to right bottom,
       rgba( 0, 0, 0, 0),
@@ -342,6 +296,7 @@
 
     &:hover {
       opacity: 1;
+      transform: scale(1.01);
     }
   }
 }
