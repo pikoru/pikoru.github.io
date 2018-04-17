@@ -40,40 +40,45 @@
       <div class="content">
         <section class="section project__section">
             <h2 class="section__heading project__heading project__heading-1">Portfolio</h2>
-            <div class="project__image project__image-portfolio"></div>
-            <!-- <img src="../img/portfolio.png" alt="" class="project__image"> -->
-            <a class="project__link">No need to click this<i class="fa fa-angle-double-right"></i> </a>
-            <p class="section__paragraph project__paragraph">
-              It was time to build a proper portfolio website.
-            </p>
-            <h2 class="project__heading project__heading-2">Some thoughts</h2>
-            <p class="section__paragraph project__paragraph">
-              When I built this website I used mobile-first approach.
+            <!-- <div class="project__image project__image-portfolio"></div> -->
+            <img src="../img/portfolio.png" alt="Image of the memory game" class="project__img u-margin-bottom-small">
+            <div class="project__text">
+              <!-- <h2 class="project__heading project__heading-2">Some thoughts</h2> -->
+              <p class="section__paragraph project__paragraph">
+                It was time to build a proper portfolio website.
+              </p>
+              <p class="section__paragraph project__paragraph">
 
-              I hand coded everyhing myself, one reason is to be able to actually include my portfolio in my...portfolio.
-              I'm not really against using Bootstrap for example, I just prefer to do it all myself.
-              When using the navigation I wanted the scroll to be smooth.
-              There is a css property called scroll-behaviour which would have solved the problem BUT the browser support at the time is not good at all, strangely enough.
-              I found some jQuery solutions but instead I wrote my own vanilla javascript to make it work, full control!
-              I am also very pleased with the not so symmetrical X when the menu is shown.
-            </p>
+                I hand coded everyhing myself, one reason is to be able to actually include my portfolio in my...portfolio.
+                I'm not really against using Bootstrap for example, I just prefer to do it all myself.
+                When using the navigation I wanted the scroll to be smooth.
+                There is a css property called scroll-behaviour which would have solved the problem BUT the browser support at the time is not good at all, strangely enough.
+                I found some jQuery solutions but instead I wrote my own vanilla javascript to make it work, full control!
+                I am also very pleased with the not so symmetrical X when the menu is shown.
+              </p>
+            </div>
+
             <div class="project__nav">
               <!-- <a href="./css-course.html" class="project__nav-link project__nav-link-left" title="Memory Game"><i class="fa fa-angle-double-left"></i></a> -->
               <!-- <a href="./css-course.html" class="project__nav-link project__nav-link-left" title="Memory Game"><i class="fa fa-angle-double-left"></i></a> -->
-              <a href="./memorygame.html" class="project__nav-link project__nav-link-left" title="Memory Game"><i class="fa fa-angle-left"></i>Previous</a>
-              <a href="./quiz.html" class="project__nav-link project__nav-link-right" title="Memory Game">Next<i class="fa fa-angle-right"></i></a>
+              <a href="./memorygame.html" class="project__nav-link project__nav-link-left" title="Memory Game"><i class="fa fa-angle-left"></i>Memory Game</a>
+              <a href="./quiz.html" class="project__nav-link project__nav-link-right" title="Quiz">Quiz<i class="fa fa-angle-right"></i></a>
             </div>
 
         </section>
 
         <section class="section contact" id="contact">
+          <div class="section__col section__col-1">
             <h2 class="section__heading contact__heading">Contact</h2>
+          </div>
+          <div class="section__col section__col-2">
             <p class="section__paragraph contact__paragraph">
-              If you want a website or anything related, please send an email to:
-              <span class="contact__mail">fritzen.max@gmail.com</span>
-              (Yes, I will fix a custom mail address eventually)
-            </p>
+              For business inquiries or questions please contact me at
 
+              <span class="contact__mail"><a href="mailto:fritzen.max@gmail.com" target="_top">fritzen.max@gmail.com</a></span>
+
+            </p>
+          </div>
         </section>
       </div>
       <footer class="footer">

@@ -1,0 +1,100 @@
+.work {
+  // background-color: $color-palette-1;
+
+  // display: block;
+
+  @media only screen and (min-width: $bp-large) {
+    // width: 100%;
+    // flex-direction: row;
+  }
+
+  &__heading {
+    // display: flex;
+    // justify-content: center;
+  }
+
+  &__items {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); // This line makes it responsive
+
+    padding: .5rem;
+    // max-width: 700px;
+    // margin: 0 auto;
+
+    @media only screen and (min-width: $bp-large) {
+      grid-template-columns: repeat(2, minmax(13rem, 1fr));
+
+      margin-right: 7rem;
+    }
+
+  }
+  &__item {
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    // border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+    margin: .2rem auto;
+    opacity: .8;
+    grid-column: min-content;
+
+    @media only screen and (min-width: $bp-large) {
+        margin: .2rem;
+    }
+
+    &-text {
+
+      color: $color-black;
+      // font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: .4rem;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+    }
+
+    &-css-course {
+
+      background-image: linear-gradient(
+      to right bottom,
+      rgba( 200, 255, 200, .2),
+      rgba( 155, 255, 255, .4)),
+      url('../img/css-course.png');
+    }
+
+    &-memorygame {
+      background-image: linear-gradient(
+      to right bottom,
+      rgba( 0, 150, 255, .7),
+      rgba( 200, 0, 0, .4)),
+      url('../img/memorygame_small.png');
+
+    }
+
+    &-portfolio {
+
+      background-image: linear-gradient(
+      to right bottom,
+      rgba($color-black, .5),
+      rgba( $color-white, .6)),
+      url('../img/portfolio.png');
+    }
+    &-quiz {
+      background-image: linear-gradient(
+      to right bottom,
+      rgba( 0, 255, 255, .7),
+      rgba( 155, 0, 0, .4)),
+      url('../img/quiz-small.png');
+      background-position: center;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.01);
+    }
+  }
+}

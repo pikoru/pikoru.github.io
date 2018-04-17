@@ -2,9 +2,9 @@
 
   background-image: linear-gradient(
     to right bottom,
-    rgba($color-grey-dark-3, .9),
-    rgba($color-grey-dark-3, .6));
-  color: $color-grey-light-2;
+    rgba($color-black, 1),
+    rgba($color-black, .9));
+  color: $color-white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,9 +12,18 @@
 
   &__title {
     animation: moveInLeft .7s;
-    font-size: 4.5rem;
-    font-weight: 200;
-    margin-left: -3rem;
+    font-size: 5rem;
+    letter-spacing: 1px;
+
+    @media only screen and (min-width: $bp-small) {
+
+        margin-left: -3rem;
+        letter-spacing: 14px;
+    }
+    @media only screen and (min-width: $bp-large) {
+      font-size: 6.5rem;
+
+    }
 
   }
 
@@ -22,8 +31,19 @@
     animation: moveInRight 8s;
     // animation-delay: 1s;
     font-size: 1.8rem;
-    font-weight: 400;
-    margin-right: -3rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    @media only screen and (min-width: $bp-small) {
+        margin-right: -7rem;
+        // margin-right: -3rem;
+        letter-spacing: 5px;
+    }
+    @media only screen and (min-width: $bp-large) {
+
+        margin-right: -16rem;
+        // margin-right: -3rem;
+        letter-spacing: 5px;
+    }
   }
 }
 

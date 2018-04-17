@@ -5,6 +5,7 @@
   }
 
   &__button {
+    animation: moveInTop 1s;
     background-color: $color-white;
     border-radius: 5px;
     box-shadow: 0 1rem 3rem rgba($color-black, .1);
@@ -31,7 +32,7 @@
     border-bottom-left-radius: 5px;
     visibility: hidden;
     // width: 100vw;
-    transition: all .3s;
+    transition: all .2s;
     transition-timing-function: cubic-bezier(.17, .67, .8, .4);
     // transition-timing-function: cubic-bezier(.17, .67, 1, -0.6);
     // transition-timing-function: cubic-bezier(.74, .21, .04, .97);
@@ -112,7 +113,7 @@
   &__checkbox:checked ~ &__nav {
     visibility: visible;
     opacity: 1;
-    right: 0;
+    right: 1rem;
     top: 8rem;
     // font-size: 1.2rem;
     // height: 8rem;

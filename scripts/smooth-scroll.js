@@ -11,16 +11,16 @@ const Scroll = (id) => {
     // Kolla ifall targetPos är negativt eller positivt
     const direction = targetPos > 0; // Borde också kolla ifall targetPos  === 0
     if ( direction ) { // true, means scroll down
-      const scrollLength = 15;
+      const scrollLength = 30;
       const intr = setInterval(() => {
 
         window.scrollBy(0, scrollLength);
         currentPos += scrollLength;
         //Framme ? stanna där
         if ( currentPos + 20 > targetPos) { clearInterval(intr) }
-      },10);
+      }, 10);
     } else { // Scroll up
-      const scrollLength = -15;
+      const scrollLength = -20;
       const intr = setInterval(() => {
         window.scrollBy(0, scrollLength);
         currentPos += scrollLength;

@@ -20,107 +20,40 @@
 
 
 
-.bio {
 
-  @media only screen and (min-width: $bp-large) {
-    flex-direction: column;
-    // flex-basis: 22rem;
-    // width: 22rem;
-    align-self: flex-end;
-    min-height: 15rem;
-    position: relative;
-
-    width: 30%;
-  }
-
-  &__heading {
-    @media only screen and (min-width: $bp-large) {
-      align-self:flex-start;
-      margin-left: .5rem;
-
-    }
-  }
-
-  &__paragraph {
-
-    @media only screen and (min-width: $bp-large) {
-
-    }
-
-  }
-  &__img {
-    opacity: .5;
-    border-radius: 50px;
-    height: 7rem;
-    width: 7rem;
-    object-fit: cover; // must set both width and height
-    display: block; // otherwise there is a white space
-    filter: grayscale(100%);
-    transition: all 1s;
-    @media only screen and (min-width: $bp-large) {
-      height:5rem;
-      width: 5rem;
-      position: absolute;
-      top: 5px;
-      right: 15px;
-    }
-
-    &:hover {
-      filter: grayscale(20%);
-      opacity: .8;
-    }
-  }
-
-  &__quote {
-    font-style: italic;
-    max-width: 80%;
-    position: relative;
-    span {
-      &::before {
-        content:"\201C";
-        font-size: 2.2rem;
-      }
-      &::after {
-        content:"\201D";
-        font-size: 2.2rem;
-      }
-    }
-
-  }
-}
 
 .interests {
 
   justify-content: center;
   @media only screen and (min-width: $bp-large) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-self: flex-end;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: flex-start;
+    // align-self: flex-end;
 
-    width: 60%;
+    // width: 60%;
     // width: 65%;
-    height: 45rem;
-    margin-left: auto;
+    // height: 45rem;
+    // margin-left: auto;
   }
 
   &__heading {
 
     @media only screen and (min-width: $bp-large) {
       // font-size: 4.2rem;
-      font-size: 6.2rem;
-      width: 40%;
+      // font-size: 6.2rem;
+      // width: 40%;
     }
   }
 
   &__paragraph {
 
     @media only screen and (min-width: $bp-large) {
-      width: 40%;
+      // width: 40%;
 
-      align-self: flex-end;
-      margin: 2.5rem 0;
-      margin-left: -2rem;
+      // align-self: flex-end;
+      // margin: 2.5rem 0;
+      // margin-left: -2rem;
     }
   }
 
@@ -132,6 +65,7 @@
       display: flex;
     }
 
+
   }
 
   &__list-item {
@@ -140,163 +74,5 @@
     border-bottom: 1px solid lightgrey;
     padding: 1rem;
   }
-}
-
-.skills {
-
-  justify-content: center;
-  @media only screen and (min-width: $bp-large) {
-    flex-direction: column;
-  }
-  &__heading {
-
-    @media only screen and (min-width: $bp-large) {
-      align-self: center;
-      background-color: $color-grey-dark-1;
-      color: $color-white;
-      letter-spacing: .2rem;
-      text-transform: uppercase;
-      font-weight: 300;
-    }
-  }
-
-  &__paragraph {
-
-  }
-
-  &__list {
-
-    list-style: none;
-  }
-
-  &__list-item {
-
-    border-left: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    padding: 1rem;
-  }
-}
-
-.contact {
-
-  @media only screen and (min-width: $bp-large) {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  &__heading {
-
-  }
-
-  &__paragraph {
-
-    p {
-      padding: 1rem;
-    }
-  }
-
-  &__mail {
-    color: #B28204;
-    display: flex;
-    font-size: 1.4rem;
-    // justify-content: center;
-    padding: 1rem;
-
-    @media only screen and (min-width: $bp-large) {
-      // justify-content: flex-start;
-    }
-  }
-}
-
-.work {
-
-  display: block;
-
-  @media only screen and (min-width: $bp-large) {
-    width: 100%;
-    flex-direction: row;
-  }
-
-  &__heading {
-    display: flex;
-    justify-content: center;
-  }
-
-  &__items {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); // This line makes it responsive
-    padding: .5rem;
-    max-width: 700px;
-    margin: 0 auto;
-
-  }
-  &__item {
-    background-position: top;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15rem;
-    border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
-    margin: .2rem auto;
-    opacity: .8;
-    grid-column: min-content;
-
-    @media only screen and (min-width: $bp-large) {
-
-    }
-
-    &-text {
-
-      color: $color-black;
-      font-size: 2.2rem;
-      font-weight: 600;
-      letter-spacing: .4rem;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    }
-
-    &-css-course {
-
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 200, 255, 200, .2),
-      rgba( 155, 255, 255, .4)),
-      url('../img/css-course.png');
-    }
-
-    &-memorygame {
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 0, 150, 255, .7),
-      rgba( 200, 0, 0, .4)),
-      url('../img/memorygame_small.png');
-
-    }
-
-    &-portfolio {
-
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 0, 0, 0, 0),
-      rgba( 0, 0, 0, .6)),
-      url('../img/portfolio.png');
-    }
-    &-quiz {
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 0, 255, 255, .7),
-      rgba( 155, 0, 0, .4)),
-      url('../img/quiz-small.png');
-      background-position: center;
-    }
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.01);
-    }
-  }
+  display: none;
 }

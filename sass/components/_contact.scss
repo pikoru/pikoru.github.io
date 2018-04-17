@@ -1,0 +1,32 @@
+.contact {
+  background-color: $color-white;
+  justify-content: flex-start;
+
+  @media only screen and (min-width: $bp-large) {
+    // flex-direction: column;
+    // width: 100%;
+  }
+
+  &__heading {
+
+  }
+
+  &__paragraph {
+
+    p {
+      padding: 1rem;
+    }
+  }
+
+  &__mail {
+    color: #B28204;
+    display: flex;
+    font-size: 1.8rem;
+    // justify-content: center;
+    // padding: 1rem;
+
+    @media only screen and (min-width: $bp-large) {
+      // justify-content: flex-start;
+    }
+  }
+}
