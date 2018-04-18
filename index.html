@@ -20,6 +20,7 @@
       </header>
 
       <div class="navigation">
+
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
@@ -28,6 +29,10 @@
 
         <nav class="navigation__nav">
           <ul class="navigation__list">
+            <noscript style="color:red">
+              I'm sorry but you need to enable JavaScript to use this menu.
+              You dont have to use this menu to navigate on the page
+            </noscript>
             <li class="navigation__item" onclick="Scroll('bio')"><a class="navigation__link">Bio</a></li>
 
             <!-- <li class="navigation__item"><button class="navigation__link" onclick="Scroll('work', this)">Work</button></li> -->
@@ -146,5 +151,6 @@
     </footer>
 
     <script src="scripts/smooth-scroll.js"></script>
+
     </body>
 </html>
