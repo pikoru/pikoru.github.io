@@ -19,6 +19,25 @@
 
       </header>
 
+      <noscript >
+        <div class="navigation">
+
+          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+          <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+          </label>
+
+          <nav class="navigation__nav">
+            <ul class="navigation__list">
+            Enable JavaScript in your browser settings to ensure smooth scrolling!
+        <li class="navigation__item"><a href="#bio" class="navigation__link">Bio</a></li>
+        <li class="navigation__item"><a href="#work" class="navigation__link" >Projects</a></li>
+        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+        <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+      </ul>
+    </nav>
+      </noscript>
       <div class="navigation">
 
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -29,14 +48,8 @@
 
         <nav class="navigation__nav">
           <ul class="navigation__list">
-            <noscript style="color:red">
-              I'm sorry but you need to enable JavaScript to use this menu.
-              You dont have to use this menu to navigate on the page
-            </noscript>
-            <li class="navigation__item" onclick="Scroll('bio')"><a class="navigation__link">Bio</a></li>
 
-            <!-- <li class="navigation__item"><button class="navigation__link" onclick="Scroll('work', this)">Work</button></li> -->
-            <!-- <li class="navigation__item" onclick="Scroll('interests')"><a class="navigation__link">Interests</a></li> -->
+            <li class="navigation__item" onclick="Scroll('bio')"><a class="navigation__link">Bio</a></li>
             <li class="navigation__item" onclick="Scroll('work')"><a class="navigation__link" >Projects</a></li>
             <li class="navigation__item" onclick="Scroll('skills')"><a class="navigation__link">Skills</a></li>
             <li class="navigation__item"  onclick="Scroll('contact')"><a class="navigation__link">Contact</a></li>
