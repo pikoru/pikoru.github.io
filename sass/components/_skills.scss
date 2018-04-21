@@ -1,25 +1,4 @@
 .skills {
-  // background-color: $color-palette-2;
-
-  // justify-content: center;
-  @media only screen and (min-width: $bp-large) {
-    // flex-direction: column;
-  }
-  &__heading {
-
-    @media only screen and (min-width: $bp-large) {
-      // align-self: center;
-      // background-color: $color-grey-dark-1;
-      // color: $color-white;
-      // letter-spacing: .2rem;
-      // text-transform: uppercase;
-      // font-weight: 300;
-    }
-  }
-
-  &__paragraph {
-
-  }
 
   &__list {
 
@@ -30,8 +9,6 @@
     color: $color-grey;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    // border-left: 1px solid lightgrey;
-    // border-bottom: 1px solid lightgrey;
     padding: .5rem 0;
   }
 }

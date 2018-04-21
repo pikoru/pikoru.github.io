@@ -29,19 +29,16 @@
 
   &__subtitle {
     animation: moveInRight 8s;
-    // animation-delay: 1s;
     font-size: 1.8rem;
     font-weight: 100;
     letter-spacing: 3px;
     @media only screen and (min-width: $bp-small) {
         margin-right: -7rem;
-        // margin-right: -3rem;
         letter-spacing: 5px;
     }
     @media only screen and (min-width: $bp-large) {
 
         margin-right: -16rem;
-        // margin-right: -3rem;
         letter-spacing: 5px;
     }
   }
