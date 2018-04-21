@@ -115,8 +115,7 @@ body {
   color: #000;
   font-family: sans-serif;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  /* font-size: 16px; */ }
+  font-weight: 300; }
 
 h1, h2, h3, h4, h5 {
   font-family: serif;
@@ -320,8 +319,7 @@ h1, h2, h3, h4, h5 {
   top: 0; }
 
 .section {
-  background-color: #f7f7f7;
-  background-color: orangered;
+  background-color: #f3f2f3;
   min-height: 75vh;
   margin: 3rem 0;
   padding: 5rem 0; }
@@ -338,7 +336,6 @@ h1, h2, h3, h4, h5 {
       flex-direction: row;
       margin: 6rem; } }
   .section__heading {
-    color: #777;
     color: #252524;
     font-size: 3.8rem;
     line-height: 1;
@@ -380,20 +377,6 @@ h1, h2, h3, h4, h5 {
           padding-left: 2rem;
           padding-right: 2rem;
           padding-top: 2rem; } }
-
-.interests {
-  justify-content: center;
-  display: none; }
-  .interests__list {
-    list-style: none; }
-    @media only screen and (min-width: 62.5em) {
-      .interests__list {
-        justify-self: end;
-        display: flex; } }
-  .interests__list-item {
-    border-left: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    padding: 1rem; }
 
 .project__header {
   padding: 2rem; }
@@ -461,16 +444,12 @@ h1, h2, h3, h4, h5 {
   font-weight: 900;
   text-decoration: underline; }
   .project__link:hover, .project__link:visited:hover {
-    cursor: pointer;
-    font-weight: bold; }
+    cursor: pointer; }
   .project__link:active, .project__link:visited:active {
     color: #fba032;
     transform: translateX(5px); }
   .project__link i, .project__link:visited i {
     padding-left: .5rem; }
-
-.project__link--small {
-  font-size: 1.4rem; }
 
 .project__nav {
   align-items: center;
@@ -493,39 +472,6 @@ h1, h2, h3, h4, h5 {
       transition: all .2s; }
   .project__nav-link i {
     margin: .3rem; }
-
-.bio__img {
-  opacity: .5;
-  border-radius: 50px;
-  height: 7rem;
-  width: 7rem;
-  object-fit: cover;
-  display: block;
-  filter: grayscale(100%);
-  transition: all 1s;
-  display: none; }
-  @media only screen and (min-width: 62.5em) {
-    .bio__img {
-      height: 5rem;
-      width: 5rem;
-      position: absolute;
-      top: 5px;
-      right: 15px; } }
-  .bio__img:hover {
-    filter: grayscale(20%);
-    opacity: .8; }
-
-.bio__quote {
-  font-style: italic;
-  max-width: 80%;
-  position: relative;
-  display: none; }
-  .bio__quote span::before {
-    content: "\201C";
-    font-size: 2.2rem; }
-  .bio__quote span::after {
-    content: "\201D";
-    font-size: 2.2rem; }
 
 .contact {
   background-color: #f3f2f3;
@@ -572,7 +518,7 @@ h1, h2, h3, h4, h5 {
       margin: .2rem; } }
   .work__item-text {
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .4rem;
     text-transform: uppercase;
     text-shadow: 1px 1px 0px black; }
