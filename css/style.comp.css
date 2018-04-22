@@ -442,9 +442,11 @@ h1, h2, h3, h4, h5 {
 .project__link, .project__link:visited {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  text-decoration: underline; }
+  text-decoration: underline;
+  display: inline-block; }
   .project__link:hover, .project__link:visited:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    transform: scale(1.05); }
   .project__link:active, .project__link:visited:active {
     color: #fba032;
     transform: translateX(5px); }
@@ -461,14 +463,14 @@ h1, h2, h3, h4, h5 {
   .project__nav-link-right {
     margin-left: auto;
     margin-right: 5rem; }
-    .project__nav-link-right :hover {
-      transform: translateX(5px);
+    .project__nav-link-right:hover {
+      transform: translateX(3px);
       transition: all .2s; }
   .project__nav-link-left {
     margin-right: auto;
     margin-left: 5rem; }
-    .project__nav-link-left :hover {
-      transform: translateX(-5px);
+    .project__nav-link-left:hover {
+      transform: translateX(-3px);
       transition: all .2s; }
   .project__nav-link i {
     margin: .3rem; }
