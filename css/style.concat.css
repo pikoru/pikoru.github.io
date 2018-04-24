@@ -393,6 +393,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 1rem;
   align-self: center; }
 
+.project__heading-2 {
+  align-self: center;
+  font-size: 5.2rem;
+  margin-bottom: 1rem;
+  margin-left: 1.8rem; }
+
 .project__paragraph {
   margin: 0; }
 
@@ -510,8 +516,6 @@ h1, h2, h3, h4, h5 {
   justify-content: center;
   align-items: center;
   height: 15rem;
-  border: 1px solid black;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.75);
   margin: .2rem auto;
   opacity: .8;
   grid-column: min-content; }
@@ -532,6 +536,9 @@ h1, h2, h3, h4, h5 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(243, 242, 243, 0.6)), url("../img/portfolio.png"); }
   .work__item-quiz {
     background-image: linear-gradient(to right bottom, rgba(0, 255, 255, 0.7), rgba(155, 0, 0, 0.4)), url("../img/quiz-small.png");
+    background-position: center; }
+  .work__item-ludvig {
+    background-image: url("../img/ludvig.png");
     background-position: center; }
   .work__item:hover {
     opacity: 1;

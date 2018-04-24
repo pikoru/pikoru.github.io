@@ -20,8 +20,8 @@
     justify-content: center;
     align-items: center;
     height: 15rem;
-    border: 1px solid black;
-    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.75);
+    // border: 1px solid black;
+    // box-shadow: 1px 0px 2px 1px rgba(0,0,0,0.75);
     margin: .2rem auto;
     opacity: .8;
     grid-column: min-content;
@@ -73,10 +73,15 @@
       url('../img/quiz-small.png');
       background-position: center;
     }
+    &-ludvig {
+      background-image: url('../img/ludvig.png');
+      background-position: center;
+    }
 
     &:hover {
       opacity: 1;
       transform: scale(1.01);
+      // box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.75);
     }
   }
 }
