@@ -5,13 +5,23 @@
   // justify-content: center;
   // align-items: center;
 
+  @media only screen and (min-width: $bp-small) {
+
+  }
 
 
 
   &__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 0;
+    height: 95vh;
+
+    @media only screen and (min-width: $bp-small) {
+      justify-content: space-between;
+      height: auto;
+    }
 
   }
 
