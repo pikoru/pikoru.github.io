@@ -269,7 +269,6 @@ h1, h2, h3, h4, h5 {
 
 .section {
   background-color: #000;
-  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8));
   margin: 2rem auto;
   padding: 2rem; }
   @media only screen and (min-width: 37.5em) {
