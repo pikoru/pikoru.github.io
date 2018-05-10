@@ -1,17 +1,78 @@
 .contact {
-  background-color: $color-white;
-  justify-content: flex-start;
+  padding-bottom: 5rem;
 
-  &__paragraph {
+  &__mail {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
 
-    p {
-      padding: 1rem;
+    @media only screen and(min-width: $bp-small) {
+      justify-content: flex-start;
     }
   }
 
-  &__mail {
-    color: #B28204;
+  &__text {
     display: flex;
-    font-size: 1.8rem;
+    justify-content: center;
+    margin: 1rem 0;
+    @media only screen and(min-width: $bp-small) {
+      display: block;
+    }
+
+  }
+  &__input {
+    padding: 1rem;
+    margin-right: .5rem;
+  }
+
+  &__submit {
+    background-color: $color-black;
+    border: 1px solid $color-white;
+    color:$color-white;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+
+    &:active {
+      color: green;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__feedback {
+    display: none;
+
+    &--error {
+      color: red;
+    }
+
+    &--success {
+      color: green;
+    }
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    @media only screen and(min-width: $bp-small) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__qr {
+    // border: 1px solid red;
+    text-align: center;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      width: 14rem;
+    }
   }
 }

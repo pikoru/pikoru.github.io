@@ -1,13 +1,19 @@
 body {
-  color: $color-black;
-  font-family:  sans-serif;
+  color: $color-white;
   font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: $default-font-size;
   font-weight: 300;
+  font-weight: 400;
+  // line-height: 1.8;
+  letter-spacing: .1rem;
+  line-height: 150%;
 
 }
 
 h1, h2, h3 ,h4 , h5 {
-    font-family:  serif;
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Lato', serif;
+    font-weight: 700;
+    line-height: 1;
 }

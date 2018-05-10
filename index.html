@@ -8,39 +8,19 @@
 
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:100,300,400,700,900" rel="stylesheet">
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <title>Portfolio | Front end web developer | Max Fritzén</title>
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="img/logo-small.png" type="image/x-icon">
+        <link rel="icon" href="img/logo-small.png" type="image/x-icon">
+        <title>Game Developers</title>
 
 
     </head>
-    <body class="container">
-      <header class="header start-header">
-        <h1 class="header__title">Max Fritzén</h1>
-        <p class="header__subtitle">Front end web developer</p>
+    <body>
 
-      </header>
-
-      <noscript >
-        <div class="navigation">
-
-          <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-          <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-          </label>
-
-          <nav class="navigation__nav">
-            <ul class="navigation__list">
-            Enable JavaScript in your browser settings to ensure smooth scrolling!
-        <a href="#bio" class="navigation__link"><li class="navigation__item">Bio</li></a>
-        <a href="#work" class="navigation__link"><li class="navigation__item">Projects</li></a>
-        <a href="#skills" class="navigation__link"><li class="navigation__item">Skills</li></a>
-        <a href="#contact" class="navigation__link"><li class="navigation__item">Contact</li></a>
-      </ul>
-    </nav>
-      </noscript>
-      <div class="navigation">
+      <div class="navigation u-show-mobile">
 
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -51,100 +31,269 @@
         <nav class="navigation__nav">
           <ul class="navigation__list">
 
-            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('bio')">Bio</li></a>
-            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('work')">Projects</li></a>
-            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('skills')">Skills</li>
+            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('about')">About</li></a>
+            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('work')">Games</li></a>
+            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('team')">Team</li>
             <a class="navigation__link"><li class="navigation__item"  onclick="Scroll('contact')">Contact</li></a>
           </ul>
         </nav>
       </div>
 
 
-      <div class="content">
-        <section class="section section-1 bio" id="bio">
-          <div class="section__col section__col-1">
-            <h2 class="section__heading  bio__heading">About</h2>
+      <header class="header" id="myHeader">
+        <div class="content-container">
+        <div class="header__content">
+          <div class="logo">
+
+            <a href="/" class="logo__image"><img src="img/logo-small.png" alt="" class="logo__image"></a>
+              <a href="/" class="logo__title"><h1>Pikoru</h1> </a>
+
           </div>
-
-            <div class="section__col section__col-2">
-              <p class="section__paragraph bio__paragraph">
-                Front end web developer based in Gothenburg, Sweden.
-
-              </p>
-              <p class="section__paragraph bio__paragraph">
-                When I studied Sound Design for Game development I came across coding and I was hooked. It started with some very basic C++ and eventually I started
-                playing around in GameMaker and Unity, and somehow I found web development.
-              </p>
-              <p class="section__paragraph bio__paragraph">
-                I studied to be a full stack web-developer at Högskolan Väst in Sweden, and complements my formal education with various Udemy courses.
-                Even though I have some knowledge about back-end it's front-end which I'm most comfortable working with.
-              </p>
-            </div>
-
-
-        </section>
-
-        <section class="section section-2 work" id="work">
-          <div class="section__col section__col-1">
-            <h2 class="section__heading work__heading">Projects</h2>
-          </div>
-          <div class="section__col section__col-2">
-            <div class="work__items">
-
-              <a href="/projects/ludvig-portfolio.html"><div class="work__item work__item-ludvig "><span class="work__item-text">Website</span></div></a>
-              <a href="/projects/css-course.html"><div class="work__item work__item-css-course "><span class="work__item-text">CSS</span></div></a>
-              <a href="/projects/memorygame.html"><div class="work__item work__item-memorygame"><span class="work__item-text">Game</span></div></a>
-              <a href="/projects/portfolio.html"><div class="work__item work__item-portfolio"><span class="work__item-text">Portfolio</span></div></a>
-              <a href="/projects/quiz.html"><div class="work__item work__item-quiz "><span class="work__item-text">Quiz</span></div></a>
-            </div>
-          </div>
-
-
-        </section>
-
-        <section class="section section-3 skills" id="skills">
-          <div class="section__col section__col-1">
-            <h2 class="section__heading skills__heading">Skills</h2>
-          </div>
-          <div class="section__col section__col-2">
-            <p class="section__paragraph skills__paragraph">
-              Right now my focus is
-              front end development. This is a list of things I'm comfortable working with:
-            </p>
-            <ul class="skills__list">
-              <li class="skills__list-item">HTML5</li>
-              <li class="skills__list-item">CSS3 ( Sass, BEM )</li>
-              <li class="skills__list-item">JavaScript</li>
-              <li class="skills__list-item">React</li>
-              <li class="skills__list-item">React with redux</li>
-              <li class="skills__list-item">Responsive design and development</li>
+          <nav class="menu u-show-desktop">
+            <ul class="menu__list">
+              <li><a href="#about" class="menu__list-item menu__list-item--active">About</a></li>
+              <li><a href="#work" class="menu__list-item">Games</a></li>
+              <li><a href="#team" class="menu__list-item">Team</a></li>
+              <li><a href="#contact" class="menu__list-item">Contact</a></li>
             </ul>
-          </div>
+          </nav>
+        </div>
+      </div>
+      </header>
+
+
+      <div class="content-container">
+        <section class="section" id="about">
+          <div class="section__content">
+              <h2 class="section__heading">About us</h2>
+
+                <h3 class="section__heading section__heading--small">An introduction is in order…</h3>
+                <p class="section__paragraph ">
+                Welcome to our place on the web – we're glad you're here. The name of this place is Pikoru, and
+                through this gateway we receive those who are interested in us and what we do.
+              </p>
+
+              <h3 class="section__heading section__heading--small">Who are we?</h3>
+                <p class="section__paragraph ">
+                  A creative trio effectively completing each other with our diverse range of skillsets, experiences and
+                  beard lengths.
+                </p>
+
+              <h3 class="section__heading section__heading--small">What do we do?</h3>
+                <p class="section__paragraph ">
+                  In short, we are creators. We make games and other interactive pieces that grow from our unifying
+                  enthusiasm for great innovation and style. We also create our own game media content.
+              </p>
+            </div>
         </section>
+
+        <section class="section work" id="work">
+          <div class="section__content">
+            <h2 class="section__heading ">Our Games</h2>
+
+              <div class="work__item">
+                <h2 class="work__header">Decoy</h2>
+                <a href="#"><img src="img/decoy.gif" alt="" class="work__img"></a>
+
+                    <p class="section__paragraph">
+                      Decoy is a fast-paced, first-person action game where you aim to
+                      escape a deadly industrial complex with the help of a mystic
+                       cloning/teleport device.
+                     </br>
+                       <a href="https://44gone.itch.io/decoy-the-game" class="work__link">Free download here!</a>
+                    </p>
+                </div>
+              <div class="work__item">
+                  <h2 class="work__header">Grandmas Balls</h2>
+                  <a href="#"><img src="img/grandmasballs.gif" alt="" class="work__img"></a>
+
+                  <p class="section__paragraph">
+                    Grandma's Balls is a multiplayer party game for 2-4 players
+                    where you play as grandma's hallucinations on the wall.
+                    </br>
+                    <a href="https://kabiscube.itch.io/grandmasballs" class="work__link">Free download here!</a>
+                   </p>
+                  </div>
+            </div>
+        </section>
+
+        <section class="section team" id="team">
+          <div class="section__content">
+            <h2 class="section__heading ">The Team</h2>
+              <div class="team__content">
+
+              <div class="team__member team__member-1">
+                <img src="img/Max.png" alt="Member of the team" class="team__member-image">
+                <ul class="team__member-details">
+                  <li>Max Fritzén</li>
+                  <li>Web Developer</li>
+                  <li><a href="https://maxfritzen.com" target="_blank"> - Portfolio</a></li>
+                </ul>
+                <p class="team__member-description">
+                  Max is a competent frontend developer and sound engineer with an unmatched appetite for challenging tasks.
+
+                </p>
+              </div>
+
+            <div class="team__member team__member-3">
+              <img src="img/Victor.png" alt="Member of the team" class="team__member-image">
+              <ul class="team__member-details">
+                <li>Victor Bankler</li>
+                <li>Designer & Writer</li>
+                <li><a href="#" target="_blank"> - IndieNova Articles</a></li>
+              </ul>
+
+
+              <p class="team__member-description">
+              Victor is a designer, writer and 2D-artist
+                constantly working to present novel ideas and great experiences
+
+              </p>
+
+              <ul class="team__member-social">
+                <!-- <li class="team__member-social__item team__member-social__item-twitter"><img src="img/twitter.png" alt=""></li> -->
+                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://twitter.com/JonBankler" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                <li class="team__member-social__item team__member-social__item-twitter"><a href="#contact"><i class="fa fa-wechat"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="team__member team__member-2">
+              <img src="img/Perra.png" alt="Member of the team" class="team__member-image">
+              <ul class="team__member-details">
+                <li>Per-Emil Fritzén</li>
+                <li>Programmer & Composer</li>
+                <li><a href="#" target="_blank"> - Portfolio</a></li>
+              </ul>
+
+              <p class="team__member-description">
+              Per-Emil is a developer, music composer and living game
+              factory who think outside the box by default.
+
+              <ul class="team__member-social">
+                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://twitter.com/limerep" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://soundcloud.com/limerep" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+              </ul>
+
+
+              </p>
+
+            </div>
+            </div>
+        </div>
+
+        </section>
+
+        <!-- <section class="section team" id="team">
+            <h2 class="section__heading team__heading">The Team</h2>
+          <div class="section__row">
+            <div class="section__col">
+              <div class="team__member team__member-1">
+                <img src="img/Max.png" alt="Member of the team" class="team__member-image">
+                <ul class="team__member-details">
+                  <li>Max Fritzén</li>
+                  <li>Web Developer</li>
+                  <li><a href="https://maxfritzen.com" target="_blank"> - Portfolio</a></li>
+                </ul>
+                <p class="section__paragraph">
+                  Max is a competent frontend developer and sound engineer with an unmatched appetite for challenging tasks.
+
+                </p>
+              </div>
+            </div>
+            <div class="section__col">
+              <div class="team__member team__member-2">
+                <img src="img/Perra.png" alt="Member of the team" class="team__member-image">
+                <ul class="team__member-details">
+                  <li>Per-Emil Fritzén</li>
+                  <li>Programmer & Composer</li>
+                  <li><a href="#" target="_blank"> - Portfolio</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="section__row">
+            <div class="team__member team__member-3">
+              <img src="img/Victor.png" alt="Member of the team" class="team__member-image">
+              <ul class="team__member-details">
+                <li>Victor Bankler</li>
+                <li>Designer & Writer</li>
+                <li><a href="#" target="_blank"> - IndieNova Articles</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </section> -->
 
         <section class="section contact" id="contact">
-          <div class="section__col section__col-1">
             <h2 class="section__heading contact__heading">Contact</h2>
-          </div>
-          <div class="section__col section__col-2">
-            <p class="section__paragraph contact__paragraph">
-              For business inquiries or questions please contact me at
+            <div class="section__row">
+              <div class="section__col">
+                <p class="contact__text">Sign up on our mailing-list to get updates on our projects</p>
+                <noscript><p style="color:red;">JavaScript must be enabled to sign up</p></noscript>
 
-              <span class="contact__mail"><a href="mailto:info@maxfritzen.com" target="_top">info@maxfritzen.com</a></span>
+                <form onsubmit="onSubmit(event)">
+                  <input type="text" id="email-input" class="contact__input" name="email" placeholder="Email address" required />
+                  <input type="submit" class="contact__submit" value="Sign up"></input>
+                </form>
+                <p class="contact__feedback contact__feedback--error" id="error-text">Something went wrong, please try again</p>
+                <p class="contact__feedback contact__feedback--success" id="success-text">Email submited, thank you!</p>
+                <p class="contact__text">
+                  If you have any questions please
+                </p>
+                <a href="mailto:piroku.company@gmail.com" class="contact__mail" target="_top">email us</a>
 
-            </p>
+              </div>
+              <div class="section__col">
+
+                <div class="contact__qr">
+                  <p class="contact__text">Follow on WeChat</p>
+                  <img src="img/wechat-qr.jpg" alt="Image of QR-code">
+                </div>
+              </div>
+
+
+            </div>
+            <div class="section__row">
           </div>
         </section>
+
       </div>
-    <footer class="footer">
-      <p>
-       This website was created by <span><a href="https://maxfritzen.com">Max Fritzén</a></span>
-        &copy; 2018
-      </p>
-    </footer>
 
-  <!-- <script src="./scripts/index.js"></script> -->
-  <script src="./scripts/index.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        // var config = {
+        //   apiKey: "AIzaSyDFWC9p9viBaemsqO3WLDCPE2tjCH65Ey4",
+        //   authDomain: "pikoru-afa35.firebaseapp.com",
+        //   databaseURL: "https://pikoru-afa35.firebaseio.com",
+        //   projectId: "pikoru-afa35",
+        //   storageBucket: "pikoru-afa35.appspot.com",
+        //   messagingSenderId: "361342662087"
+        // };
+        // firebase.initializeApp(config);
+      </script>
+      <!-- <script src="./src/index.js"></script> -->
+      <script src="./scripts/index.js"></script>
+      <!-- <script src="./scripts/index.min.js"></script> -->
+      <!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
+      <script>
+      // When the user scrolls the page, execute myFunction
+        // window.onscroll = function() {myFunction()};
 
+        // Get the header
+        // var header = document.getElementById("myHeader");
+        //
+        // // Get the offset position of the navbar
+        // var sticky = header.offsetTop;
+        //
+        // // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        // function myFunction() {
+        // if (window.pageYOffset >= sticky) {
+        //   header.classList.add("sticky");
+        // } else {
+        //   header.classList.remove("sticky");
+        // }
+        // }
+      </script>
     </body>
 </html>

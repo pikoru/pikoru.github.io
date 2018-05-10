@@ -1,54 +1,37 @@
 .header {
+  background-color: $color-black;
+  min-height: 10vh;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
-  background-image: linear-gradient(
-    to right bottom,
-    rgba($color-black, 1),
-    rgba($color-black, .9));
-  color: $color-white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
-  &__title {
-    animation: moveInLeft .7s;
-    font-size: 5rem;
-    letter-spacing: 1px;
 
-    @media only screen and (min-width: $bp-small) {
 
-        margin-left: -3rem;
-        letter-spacing: 14px;
-    }
-    @media only screen and (min-width: $bp-large) {
-      font-size: 6.5rem;
-
-    }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
 
   }
 
-  &__subtitle {
-    animation: moveInRight 8s;
-    font-size: 1.8rem;
-    font-weight: 100;
-    letter-spacing: 3px;
-    @media only screen and (min-width: $bp-small) {
-        margin-right: -7rem;
-        letter-spacing: 5px;
-    }
-    @media only screen and (min-width: $bp-large) {
 
-        margin-right: -16rem;
-        letter-spacing: 5px;
-    }
+
+}
+//STICKY FUNCTIONALITY
+.sticky {
+  @media only screen and(min-width: $bp-small) {
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
+
 }
 
-.start-header {
-  height: 98vh;
-
-  h1 {
-      animation: moveInLeft 2s;
+.sticky + .content {
+  @media only screen and(min-width: $bp-small) {
+    margin-top: 14rem;
   }
+  // padding-top: 102px;
 
 }

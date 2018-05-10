@@ -1,0 +1,50 @@
+.menu {
+
+  align-self: flex-end;
+
+  li {
+    display: inline-block;
+    margin: 0 1rem;
+
+
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+    display: inline-block;
+    opacity: 0.9;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      background-color: $color-white;
+      display: inline-block;
+      height: 2px;
+      visibility: hidden;
+      width: 1px;
+      transition: all .5s ease-in-out;
+
+      position: absolute;
+      top: 100%;
+      // left: 50%;
+      right: 0;
+
+      transform:  translateY(-100%);
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &::after {
+        visibility: visible;
+        width: 100%;
+      }
+
+    }
+
+  }
+}

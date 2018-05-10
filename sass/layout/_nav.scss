@@ -124,8 +124,8 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all .5s;
-      transition-timing-function: cubic-bezier(.17, .67, .8, .4);
+      transition: all 1.5s;
+      // transition-timing-function: cubic-bezier(.17, .67, .8, .4);
     }
 
     &::before { top: -.8rem }
@@ -145,15 +145,29 @@
   }
 
   &__checkbox:checked + &__button &__icon::before {
-    transform: rotate(160deg);
-    top: 0;
+    transform: rotate(30deg);
+    top: .8rem;
   }
 
   &__checkbox:checked + &__button &__icon::after {
 
-    transform: rotate(-110deg);
-    top: 0;
+    transform: rotate(-30deg);
+    top: -.7rem;
   }
 
+  &__checkbox:checked + &__button  {
 
+    transform: rotate(90deg);
+    transition: transform 1.5s;
+    // top: 0;
+  }
+
+}
+@keyframes shake {
+  from {
+    transform: translate3d(5px, 5px, 0);
+  }
+  to {
+    transform: translate3d(0);
+  }
 }

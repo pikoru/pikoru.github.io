@@ -5,16 +5,18 @@
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
-@import "base/utilities";
+
 
 @import "layout/footer";
 @import "layout/header";
 @import "layout/nav";
 @import "layout/section";
 
-@import "pages/project";
-
-@import "components/bio";
 @import "components/contact";
-@import "components/skills";
+@import "components/content-container";
+@import "components/logo";
+@import "components/menu";
+@import "components/team";
 @import "components/work";
+
+@import "base/utilities";

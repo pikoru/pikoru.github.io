@@ -24,3 +24,15 @@
 .u-align-end { align-self: flex-end !important; }
 
 .u-margin-left { margin-left: 1rem !important; }
+
+.u-show-mobile {
+  @media only screen and (min-width: $bp-small) {
+    display: none;
+  }
+}
+.u-show-desktop {
+  display: none;
+  @media only screen and (min-width: $bp-small) {
+    display: inline-block;
+  }
+}

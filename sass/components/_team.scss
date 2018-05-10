@@ -1,0 +1,160 @@
+.team {
+
+
+
+overflow: auto;
+
+&__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  &__member {
+
+
+    margin-bottom: 4.8rem;
+    max-width: 30rem;
+    @media only screen and (min-width: $bp-small) {
+    margin: 0 1rem 4.8rem 1rem;
+    width: 45%;
+    }
+
+
+    @media only screen and (min-width: $bp-large) {
+
+      margin: 1rem;
+      width: 30%;
+    }
+
+    &-image {
+      border-radius: 1rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    &-description {
+      margin: 1rem;
+      width: 100%;
+    }
+
+    &-details {
+
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      margin: 1rem;
+      padding-right: 1rem;
+      padding: .5rem;
+      // width: 14rem;
+      // margin: 0 auto;
+
+
+      li {
+        // margin-left: 1rem;
+
+        a {
+          display: inline-block;
+
+          &::after {
+            content: "\00bb";
+            margin: 2px;
+          }
+
+          &:hover {
+            transform: translateX(2px);
+            transition: all .2s;
+          }
+        }
+      }
+    }
+
+    &-social {
+      font-size: 4.8rem;
+
+      list-style: none;
+      // display: flex;
+
+      margin: 1rem;
+
+      &__item {
+        margin-right: 2rem;
+        display: inline-block;
+
+        &-twitter {
+          i {
+            // background-color: white;
+            color: white;
+          }
+
+        }
+
+        &-soundcloud {
+          &::before {content: "\f1d7";}
+          i {
+
+          }
+
+        }
+
+        &-wechat {
+          i {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// .team {
+//
+//
+//   &__member {
+//     border: 1px solid black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//
+//     @media only screen and(min-width: $bp-small) {
+//       align-items: flex-start;
+//     }
+//
+//     &-image {
+//       border-radius: 1rem;
+//       width: 12rem;
+//     }
+//
+//     &-details {
+//       background-color: $color-white;
+//       color: $color-black;
+//       font-weight: 600;
+//       list-style: none;
+//       line-height: 1.4;
+//       margin: 1rem;
+//       padding-right: 1rem;
+//       width: 50%;
+//       @media only screen and(min-width: $bp-small) {
+//         width: 100%;
+//       }
+//
+//       li {
+//         margin-left: 1rem;
+//
+//         a {
+//           display: inline-block;
+//
+//           &::after {
+//             content: "\00bb";
+//             margin: 2px;
+//           }
+//
+//           &:hover {
+//             transform: translateX(2px);
+//             transition: all .2s;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,13 @@
+.logo {
+  display: flex;
+
+  &__title {
+    align-self: flex-end;
+    line-height: 1;
+  }
+
+  &__image {
+    height: 10rem;
+    width: 10rem;
+  }
+}

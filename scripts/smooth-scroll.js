@@ -1,4 +1,5 @@
-const Scroll = (id) => {
+
+export const Scroll = (id) => {
   // Ta in ID att scrolla till.
   // Hitta det ID:t
   var targetId = document.getElementById(id);

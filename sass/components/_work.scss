@@ -1,87 +1,55 @@
 .work {
 
-  &__items {
+  padding: 1rem;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); // This line makes it responsive
-    padding: .5rem;
-
-    @media only screen and (min-width: $bp-large) {
-      grid-template-columns: repeat(2, minmax(13rem, 1fr));
-
-      margin-right: 7rem;
-    }
-
-  }
   &__item {
-    background-position: top;
-    background-size: cover;
+
+    margin: 1rem 0;
+
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        background: linear-gradient(rgba($color-white, 1), rgba($color-white, .1)) ;
+        border-radius: 5px;
+        display: block;
+        height: 2px;
+        margin: 3rem auto;
+        width: 80%;
+      }
+    }
+  }
+
+  &__header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 15rem;
-    // border: 1px solid black;
-    // box-shadow: 1px 0px 2px 1px rgba(0,0,0,0.75);
-    margin: .2rem auto;
-    opacity: .8;
-    grid-column: min-content;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
 
-    @media only screen and (min-width: $bp-large) {
-        margin: .2rem;
+  &__img {
+    margin-bottom: 2rem;
+
+    @media only screen and(min-width: $bp-medium) {
+      display: block;
+      margin: 2rem auto;
+      width: 75%;
     }
+  }
 
-    &-text {
+  &__text {
+    margin: 0 1.7rem;
+  }
 
-      color: $color-black;
-      font-weight: 700;
-      letter-spacing: .4rem;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-    }
-
-    &-css-course {
-
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 200, 255, 200, .2),
-      rgba( 155, 255, 255, .4)),
-      url('../img/css-course.png');
-    }
-
-    &-memorygame {
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 0, 150, 255, .7),
-      rgba( 200, 0, 0, .4)),
-      url('../img/memorygame_small.png');
-
-    }
-
-    &-portfolio {
-
-      background-image: linear-gradient(
-      to right bottom,
-      rgba($color-black, .5),
-      rgba( $color-white, .6)),
-      url('../img/portfolio.png');
-    }
-    &-quiz {
-      background-image: linear-gradient(
-      to right bottom,
-      rgba( 0, 255, 255, .7),
-      rgba( 155, 0, 0, .4)),
-      url('../img/quiz-small.png');
-      background-position: center;
-    }
-    &-ludvig {
-      background-image: url('../img/ludvig.png');
-      background-position: center;
-    }
+  &__link {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: underline;
 
     &:hover {
-      opacity: 1;
-      transform: scale(1.01);
-      // box-shadow: 1px 0px 1px 1px rgba(0,0,0,0.75);
+
     }
+
+
   }
 }
