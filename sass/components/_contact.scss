@@ -23,8 +23,13 @@
 
   }
   &__input {
-    padding: 1rem;
+    padding: 1rem .5rem;
     margin-right: .5rem;
+    width: 57%;
+    @media only screen and (min-width: $bp-small) {
+      margin-right: .5rem;
+    }
+
   }
 
   &__submit {
@@ -32,7 +37,13 @@
     border: 1px solid $color-white;
     color:$color-white;
     text-transform: uppercase;
-    padding: 1rem 2rem;
+
+
+    width: 40%;
+
+    @media only screen and (min-width:$bp-small) {
+      padding: 1rem 0;
+    }
 
     &:active {
       color: green;
@@ -58,9 +69,13 @@
 
   form {
     display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    @media only screen and(min-width: $bp-small) {
+
+    @media only screen and(min-width: $bp-smallest) {
       justify-content: flex-start;
+      flex-direction: row;
     }
   }
 

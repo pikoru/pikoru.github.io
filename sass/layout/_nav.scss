@@ -2,6 +2,7 @@
 
   &__checkbox {
     display: none;
+
   }
 
   &__button {
@@ -18,6 +19,9 @@
     top: 2rem;
     right: 2rem;
     z-index: 2000;
+
+    transform: rotate(0deg);
+    transition: transform .5s;
 
   }
 
@@ -124,7 +128,7 @@
       content: "";
       position: absolute;
       left: 0;
-      transition: all 1.5s;
+      transition: all .5s;
       // transition-timing-function: cubic-bezier(.17, .67, .8, .4);
     }
 
@@ -145,20 +149,20 @@
   }
 
   &__checkbox:checked + &__button &__icon::before {
-    transform: rotate(30deg);
-    top: .8rem;
+    transform: rotate(-135deg);
+    top: 1px;
   }
 
   &__checkbox:checked + &__button &__icon::after {
 
-    transform: rotate(-30deg);
-    top: -.7rem;
+    transform: rotate(135deg);
+    top: 0;
   }
 
   &__checkbox:checked + &__button  {
 
     transform: rotate(90deg);
-    transition: transform 1.5s;
+    transition: transform .5s;
     // top: 0;
   }
 

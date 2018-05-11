@@ -12,8 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="shortcut icon" href="img/logo-small.png" type="image/x-icon">
-        <link rel="icon" href="img/logo-small.png" type="image/x-icon">
+        <link rel="shortcut icon" href="img/logo-image.png" type="image/x-icon">
+        <link rel="icon" href="img/logo-image.png" type="image/x-icon">
         <title>Game Developers</title>
 
 
@@ -28,7 +28,7 @@
           <span class="navigation__icon">&nbsp;</span>
         </label>
 
-        <nav class="navigation__nav">
+        <nav class="navigation__nav" id="nav">
           <ul class="navigation__list">
 
             <a class="navigation__link"><li class="navigation__item" onclick="Scroll('about')">About</li></a>
@@ -43,12 +43,23 @@
       <header class="header" id="myHeader">
         <div class="content-container">
         <div class="header__content">
-          <div class="logo">
 
-            <a href="/" class="logo__image"><img src="img/logo-small.png" alt="image of logo" class=""></a>
-              <a href="/"><h1 class="logo__title">Pikoru</h1> </a>
+      <div class="logo">
+            <!-- <a href="/" class="logo__image"><img src="img/logo-small.png" alt="image of logo" class=""></a> -->
 
-          </div>
+              <!-- <a href="/"><img src="img/logo-text.png" alt="Image of text Pikoru" class="logo__title" /> </a> -->
+              <!-- <a href="/" class="logo__title"> </a> -->
+              <a href="/" class="logo__image"><img src="img/logo-img.png" alt="image of logo"></a>
+                <a href="/"><h1 class="logo__title">Pikoru Studios</h1> </a>
+</div>
+
+          <!-- <div class="logo">
+
+
+              <a href="/"><img src="img/logo-text.png" alt="Image of text Pikoru" class="logo__title" /> </a>
+              <a href="/" class="logo__image"><img src="img/logo-img.png" alt="image of logo"></a>
+
+          </div> -->
           <nav class="menu u-show-desktop">
             <ul class="menu__list">
               <li><a href="#about" class="menu__list-item menu__list-item--active">About</a></li>
@@ -153,8 +164,9 @@
 
               <ul class="team__member-social">
                 <!-- <li class="team__member-social__item team__member-social__item-twitter"><img src="img/twitter.png" alt=""></li> -->
-                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://twitter.com/JonBankler" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                <li class="team__member-social__item team__member-social__item-twitter"><a href="#contact"><i class="fa fa-wechat"></i></a></li>
+                <li class="team__member-social__item"><a href="https://twitter.com/JonBankler" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                <noscript><li class="team__member-social__item"><a href="#contact"><i class="fa fa-wechat"></i></a></li></noscript>
+                <li class="team__member-social__item"><i class="fa fa-wechat" onclick="Scroll('contact')"></i></li>
               </ul>
             </div>
 
@@ -171,8 +183,8 @@
               factory who think outside the box by default.
 
               <ul class="team__member-social">
-                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://twitter.com/limerep" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                <li class="team__member-social__item team__member-social__item-twitter"><a href="https://soundcloud.com/limerep" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                <li class="team__member-social__item"><a href="https://twitter.com/limerep" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                <li class="team__member-social__item"><a href="https://soundcloud.com/limerep" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
               </ul>
 
 
@@ -226,6 +238,7 @@
         </section> -->
 
         <section class="section contact" id="contact">
+          <div class="section__content">
             <h2 class="section__heading contact__heading">Contact</h2>
             <div class="section__row">
               <div class="section__col">
@@ -247,7 +260,12 @@
               <div class="section__col">
 
                 <div class="contact__qr">
-                  <p class="contact__text">Follow on WeChat</p>
+                  <!-- <p class="contact__text">Follow on WeChat</p> -->
+                  <p class="contact__text">
+                    我们为中国独立游戏做英文实况
+                    如果你想让我们玩你的游戏，
+                    请联系我们
+                  </p>
                   <img src="img/wechat-qr.jpg" alt="Image of QR-code">
                 </div>
               </div>
@@ -255,6 +273,7 @@
 
             </div>
             <div class="section__row">
+          </div>
           </div>
         </section>
 
@@ -278,6 +297,57 @@
       <!-- <script src="./scripts/index.min.js"></script> -->
       <!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
       <script>
+
+      const unCheck = () => {
+        // console.log('unCheck');
+        setTimeout(() => {
+          document.getElementById('navi-toggle').checked = false;
+        }, 100);
+
+        document.removeEventListener('click', unCheck);
+      };
+
+      function hideOnClickOutside(element) {
+          const outsideClickListener = event => {
+            console.log(!element.contains(event.target));
+              if (!element.contains(event.target)) { // or use: event.target.closest(selector) === null
+                  console.log('här');
+                  if (document.getElementById('navi-toggle').checked === true) {
+                    document.addEventListener('click', unCheck);
+                    // console.log('Is checked');
+
+
+                      // removeClickListener();
+                  }
+                  // if (isVisible(element)) {
+                  //   console.log('hall');
+                  //     document.getElementById('navi-toggle').checked = false;
+                  //
+                  //     // removeClickListener();
+                  // }
+              }
+          }
+
+          const isVisible = (element) => {
+            //KOLLA ISTÄLLET IFALL checkbox är checked istället. Gör den unchecked ifall den är checked.
+
+            const visibility = window.getComputedStyle(element).visibility;
+            if (visibility === 'visible') {
+              return true;
+            } else {
+              return false;
+
+            }
+          }
+
+          const removeClickListener = () => {
+              document.removeEventListener('click', outsideClickListener)
+          }
+
+          document.addEventListener('click', outsideClickListener)
+      }
+
+      hideOnClickOutside(document.getElementById('nav'));
       // When the user scrolls the page, execute myFunction
         // window.onscroll = function() {myFunction()};
 

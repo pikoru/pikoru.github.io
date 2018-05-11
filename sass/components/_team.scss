@@ -80,25 +80,19 @@ overflow: auto;
         margin-right: 2rem;
         display: inline-block;
 
-        &-twitter {
-          i {
-            // background-color: white;
-            color: white;
+        i {
+          // background-color: white;
+          color: white;
+          transition: all .2s;
+
+          &:hover {
+            cursor: pointer;
+            transform: translateY(-3px);
           }
 
-        }
-
-        &-soundcloud {
-          &::before {content: "\f1d7";}
-          i {
-
-          }
-
-        }
-
-        &-wechat {
-          i {
-
+          &:active {
+            transform: translateY(0);
+            color: $color-primary;
           }
         }
       }

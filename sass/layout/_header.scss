@@ -1,6 +1,7 @@
 .header {
   background-color: $color-black;
-  min-height: 10vh;
+  padding-top: 2rem;
+  // min-height: 10vh;
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -15,10 +16,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    // padding: 2rem 0;
     height: 95vh;
+    position: relative;
 
     @media only screen and (min-width: $bp-small) {
+      align-items: flex-end;
       justify-content: space-between;
       height: auto;
     }
