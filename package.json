@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "watch:babel": "npx babel scripts/functions.js --watch --out-file scripts/index.js",
-    "babel:script": "babel scripts/form.js scripts/smooth-scroll.js --out-file scripts/index.js",
+    "babel:script": "babel scripts/functions.js --out-file scripts/index.js",
     "compress:script": "uglifyjs scripts/index.js --compress --mangle --output scripts/index.min.js",
 
     "dev": "webpack-dev-server --mode development --watch",
