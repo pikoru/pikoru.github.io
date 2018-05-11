@@ -309,9 +309,9 @@
 
       function hideOnClickOutside(element) {
           const outsideClickListener = event => {
-            console.log(!element.contains(event.target));
+
               if (!element.contains(event.target)) { // or use: event.target.closest(selector) === null
-                  console.log('här');
+
                   if (document.getElementById('navi-toggle').checked === true) {
                     document.addEventListener('click', unCheck);
                     // console.log('Is checked');
