@@ -1,15 +1,9 @@
 .content-container {
   margin: 0 auto;
-  // max-width: 700px;
   max-width: 1000px;
+  max-width: 1400px;
+  max-width: 1200px;
+
   padding: 1rem;
-  @media only screen and (min-width: $bp-large) {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // flex-wrap: wrap;
-    // max-width: 1200px;
-    // max-width: 1600px;
-  }
 
 }

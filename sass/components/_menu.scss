@@ -22,6 +22,7 @@
     &::after {
       content: "";
       background-color: $color-white;
+      background-color: $color-black;
       display: inline-block;
       height: 2px;
       visibility: hidden;
@@ -30,7 +31,6 @@
 
       position: absolute;
       top: 100%;
-      // left: 50%;
       right: 0;
 
       transform:  translateY(-100%);

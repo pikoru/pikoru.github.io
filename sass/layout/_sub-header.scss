@@ -1,0 +1,15 @@
+.sub-header {
+  height: 40vh;
+  text-align: center;
+
+  &__img {
+    // animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    // border-radius: 50%;
+    // width: 50%;
+    height: 100%;
+  }
+}

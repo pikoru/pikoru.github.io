@@ -1,0 +1,11 @@
+.logo-2 {
+  position: absolute;
+  right: 50%;
+  top: 75px;
+  transform: translate(50%, 0);
+  &__image {
+    border-radius: 50%;
+    height: 15rem;
+    width: 15rem
+  }
+}

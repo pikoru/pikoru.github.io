@@ -1,13 +1,14 @@
 .header {
-  background-color: $color-black;
+  // background-color: $color-black;
+  // background-color: $color-white;
+
+  color: $color-black;
+
   padding-top: 2rem;
-  // min-height: 10vh;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   @media only screen and (min-width: $bp-small) {
-
+    // margin-bottom: 7rem;
+    // padding-top: 10rem;
   }
 
 
@@ -16,35 +17,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding: 2rem 0;
     height: 95vh;
     position: relative;
 
     @media only screen and (min-width: $bp-small) {
       align-items: flex-end;
       justify-content: space-between;
+      // justify-content: flex-end;
       height: auto;
     }
 
   }
-
-
-
-}
-//STICKY FUNCTIONALITY
-.sticky {
-  @media only screen and(min-width: $bp-small) {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-}
-
-.sticky + .content {
-  @media only screen and(min-width: $bp-small) {
-    margin-top: 14rem;
-  }
-  // padding-top: 102px;
 
 }

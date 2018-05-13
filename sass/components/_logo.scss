@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
 
-  position: relative;
   @media only screen and (min-width: $bp-small) {
     flex-direction: row;
     align-items: flex-end;
@@ -13,57 +12,41 @@
 
 
   &__title {
-  animation: moveInRight 3s;
-    // position: absolute;
-    // top: 50%;
-    // right: 50%;
+    animation: moveInTop 3s;
     font-size: 2.4rem;
-    // width: 15rem;
-
-    // text-transform: uppercase;
-    // background-size: 100%;
-    // background-image: url(../img/logo-text.png);
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    //
-    // height: 2.4rem;
     margin-left: 1rem;
-    // width: 20rem;
-    //
-    // line-height: 1;
-    // // position: absolute;
-    // // top: 50%;
-    //
-    // @media only screen and (min-width: $bp-small) {
-    //   align-self: flex-end;
-    //   margin-top: 0;
-    //   // position: static;
-    //
-    // }
+    text-transform: uppercase;
+    &-first {
+
+      border-top: 2px solid;
+      border-bottom: 2px solid;
+    }
+    &-second {
+      background-color: $color-white;
+      color: $color-black;
+      font-weight: 900;
+    }
+
     &:hover {
       opacity: .8;
     }
   }
 
   &__image {
-    // height: 10rem;
 
     animation-name: float;
     animation-duration: 5s;
     animation-iteration-count: infinite;
 
-
-
-
     @media only screen and (min-width: $bp-small) {
-      // line-height: 0;
-      // margin-bottom: -.6rem;
-      width: 15rem;
+
       width: 5rem;
       margin-bottom: -1.5rem;
     }
 
-
+    &:active {
+      color: $color-primary;
+    }
 
   }
 }

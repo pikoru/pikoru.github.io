@@ -1,7 +1,5 @@
 .team {
 
-
-
 overflow: auto;
 
 &__content {
@@ -10,6 +8,15 @@ overflow: auto;
   justify-content: center;
 }
   &__member {
+    animation: opacityChange 3s;
+    &:nth-child(2) {
+      animation-delay: 2.5s;
+      animation-fill-mode: backwards;
+    }
+    &:nth-child(3) {
+      animation-delay: 3s;
+      animation-fill-mode: backwards;
+    }
 
 
     margin-bottom: 4.8rem;
@@ -45,12 +52,8 @@ overflow: auto;
       margin: 1rem;
       padding-right: 1rem;
       padding: .5rem;
-      // width: 14rem;
-      // margin: 0 auto;
-
 
       li {
-        // margin-left: 1rem;
 
         a {
           display: inline-block;
@@ -69,11 +72,9 @@ overflow: auto;
     }
 
     &-social {
+
       font-size: 4.8rem;
-
       list-style: none;
-      // display: flex;
-
       margin: 1rem;
 
       &__item {
@@ -81,7 +82,7 @@ overflow: auto;
         display: inline-block;
 
         i {
-          // background-color: white;
+
           color: white;
           transition: all .2s;
 
@@ -99,56 +100,3 @@ overflow: auto;
     }
   }
 }
-
-
-// .team {
-//
-//
-//   &__member {
-//     border: 1px solid black;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//
-//     @media only screen and(min-width: $bp-small) {
-//       align-items: flex-start;
-//     }
-//
-//     &-image {
-//       border-radius: 1rem;
-//       width: 12rem;
-//     }
-//
-//     &-details {
-//       background-color: $color-white;
-//       color: $color-black;
-//       font-weight: 600;
-//       list-style: none;
-//       line-height: 1.4;
-//       margin: 1rem;
-//       padding-right: 1rem;
-//       width: 50%;
-//       @media only screen and(min-width: $bp-small) {
-//         width: 100%;
-//       }
-//
-//       li {
-//         margin-left: 1rem;
-//
-//         a {
-//           display: inline-block;
-//
-//           &::after {
-//             content: "\00bb";
-//             margin: 2px;
-//           }
-//
-//           &:hover {
-//             transform: translateX(2px);
-//             transition: all .2s;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

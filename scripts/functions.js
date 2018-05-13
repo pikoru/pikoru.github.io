@@ -9,6 +9,7 @@ var config = {
 };
 firebase.initializeApp(config);
 const database = firebase.database();
+
 const Scroll = (id) => {
   // Ta in ID att scrolla till.
   // Hitta det ID:t
@@ -47,26 +48,6 @@ const Scroll = (id) => {
       },10);
     }
 }
-
-// const OnSubmit = (e) => {
-//   e.preventDefault();
-//   console.log('OnSubmit called');
-//   const email = document.getElementById('email-input').value;
-//   console.log(email);
-//
-//   return database.ref('emails').push(email)
-//   .then(() => {
-//     alert('Email added!!!');
-//   }).catch((e) => {
-//     console.log('error:', e.message);
-//   });
-//
-// }
-
-// function validateEmail(email) {
-//     var char = '@';
-//     return char.test(String(email).toLowerCase());
-// }
 
 const onSubmit = (e) => {
   e.preventDefault();
@@ -107,5 +88,46 @@ const showAlert = (type) => {
       document.getElementById('success-text').style.display = 'none'
       break;
   }
-
 }
+
+
+const unCheck = () => {
+
+  setTimeout(() => {
+    document.getElementById('navi-toggle').checked = false;
+  }, 100);
+
+  document.removeEventListener('click', unCheck);
+};
+
+function hideOnClickOutside(element) {
+    const outsideClickListener = event => {
+
+        if (!element.contains(event.target)) {
+
+            if (document.getElementById('navi-toggle').checked === true) {
+              document.addEventListener('click', unCheck);
+            }
+
+        }
+    }
+
+    const isVisible = (element) => {
+
+      const visibility = window.getComputedStyle(element).visibility;
+      if (visibility === 'visible') {
+        return true;
+      } else {
+        return false;
+
+      }
+    }
+
+    const removeClickListener = () => {
+        document.removeEventListener('click', outsideClickListener)
+    }
+
+    document.addEventListener('click', outsideClickListener)
+}
+
+hideOnClickOutside(document.getElementById('nav'));
