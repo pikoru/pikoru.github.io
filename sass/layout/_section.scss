@@ -2,20 +2,25 @@
 .section {
   // background-color: $color-black;
   // background-color: $color-secondary;
-  color: $color-black;
+  color: $color-white;
   margin: 2rem auto;
   padding: 2rem;
 
   &:nth-child(1) {
+    @media only screen and (min-width: $bp-small) {
+      animation: moveInRight 5s;
+    }
 
-    animation: moveInRight 5s;
 
   }
 
-  &:not(:first-child) {
-    animation: opacityChange 5s;
-    animation-delay:2s;
-    animation-fill-mode: backwards;
+  &:not(:first-child):not(:last-child) {
+    @media only screen and (min-width: $bp-small) {
+      animation: opacityChange 5s;
+      animation-delay:2s;
+      animation-fill-mode: backwards;
+    }
+
   }
 
 
@@ -95,6 +100,9 @@
       letter-spacing: .3rem;
       font-size: 3.2rem;
       font-weight: 700;
+      @media only screen and(min-width: $bp-small) {
+        // width: 65%;
+      }
     }
 
   }
@@ -104,7 +112,7 @@
     width: 90%;
 
     @media only screen and(min-width: $bp-smallest) {
-      width: 65%;
+      // width: 65%;
       max-width: 450px;
     }
 

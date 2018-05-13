@@ -15,14 +15,16 @@
 
   &__list-item {
     display: inline-block;
+    font-weight: 500;
     opacity: 0.9;
     position: relative;
+    padding: .5rem;
 
 
     &::after {
       content: "";
       background-color: $color-white;
-      background-color: $color-black;
+      // background-color: $color-black;
       display: inline-block;
       height: 2px;
       visibility: hidden;
@@ -30,8 +32,8 @@
       transition: all .5s ease-in-out;
 
       position: absolute;
-      top: 100%;
-      right: 0;
+      top: 75%;
+      right: 6px;
 
       transform:  translateY(-100%);
     }
@@ -41,7 +43,7 @@
 
       &::after {
         visibility: visible;
-        width: 100%;
+        width: 80%;
       }
 
     }

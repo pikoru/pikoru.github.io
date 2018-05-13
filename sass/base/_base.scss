@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-color: $color-white;
+  background-color: $color-black;
   box-sizing: border-box;
 
 
@@ -46,5 +46,6 @@ a:visited {
   &:active {
     color: goldenrod;
     color: $color-primary;
+    color: $color-secondary;
   }
 }
