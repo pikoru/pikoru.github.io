@@ -1,0 +1,12 @@
+.link {
+  color: #4717F6;
+  font-weight: 700;
+  display: inline-block;
+  transition: all .2s;
+  &:hover {
+    transform: translateY(-1px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}

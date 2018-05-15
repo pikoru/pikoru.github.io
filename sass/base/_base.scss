@@ -41,11 +41,13 @@ img {
 a,
 a:visited {
   color: inherit;
-  text-decoration: none;
+  // text-decoration: none;
+
 
   &:active {
     color: goldenrod;
     color: $color-primary;
-    color: $color-secondary;
+    // color: $color-secondary;
+    text-decoration: none;
   }
 }
