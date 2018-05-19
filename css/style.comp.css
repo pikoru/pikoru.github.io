@@ -672,7 +672,10 @@ h1, h2, h3, h4, h5 {
   color: #4717F6 !important; }
 
 .u-bg-primary {
-  background-color: #4717F6 !important; }
+  background-color: #4717F6 !important;
+  color: #E7DFDD !important;
+  font-weight: 900;
+  opacity: 1 !important; }
 
 .u-color-secondary {
   color: #A239CA !important; }
