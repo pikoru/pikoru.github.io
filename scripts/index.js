@@ -142,12 +142,21 @@ var lazyLoadSections = function lazyLoadSections() {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
             lazyBackgroundObserver.unobserve(entry.target);
+          } else if (entry.isIntersecting === undefined) {
+            //fallback if polyfill is needed and fails.
+            entry.target.classList.add("visible");
+            lazyBackgroundObserver.unobserve(entry.target);
           }
         });
       });
 
       lazyBackgrounds.forEach(function (lazyBackground) {
         lazyBackgroundObserver.observe(lazyBackground);
+      });
+    } else {
+      //skip lazy loading.
+      lazyBackgrounds.forEach(function (element) {
+        element.classList.add('visible');
       });
     }
   });
