@@ -9,15 +9,15 @@ overflow: auto;
 }
   &__member {
     @media only screen and (min-width: $bp-small) {
-      animation: opacityChange 3s;
+      animation: fadeIn 1s;
     }
 
     &:nth-child(2) {
-      animation-delay: 2.5s;
+      animation-delay: .3s;
       animation-fill-mode: backwards;
     }
     &:nth-child(3) {
-      animation-delay: 3s;
+      animation-delay: .6s;
       animation-fill-mode: backwards;
     }
 

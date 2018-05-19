@@ -1,0 +1,15 @@
+.pikoruplay {
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 400px;
+
+    @media only screen and (min-width: $bp-medium) {
+      width: 35%;
+    }
+
+
+  }
+}

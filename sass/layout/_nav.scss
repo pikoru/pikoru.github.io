@@ -27,7 +27,7 @@
 
   &__nav {
 
-    background-color: white;
+    background-color: $color-white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     visibility: hidden;
@@ -46,6 +46,7 @@
 
   &__link {
     color: $color-grey-dark-1;
+    color: $color-black;
 
     &:link,
     &:visited {
@@ -104,7 +105,7 @@
     opacity: 1;
     right: 1rem;
     top: 8rem;
-    width: 8rem;
+    width: auto;
 
     @media only screen and (min-width: $bp-large) {
       width: 12rem;

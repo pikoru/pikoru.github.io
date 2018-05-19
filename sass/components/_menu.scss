@@ -11,14 +11,11 @@
 
   }
 
-  &__list {
-
-  }
-
   &__list-item {
 
     display: inline-block;
     font-weight: 500;
+    opacity:.9;
     padding: .5rem;
     position: relative;
     text-decoration: none;
@@ -41,8 +38,8 @@
     }
 
     &:hover {
-      // opacity: 1;
-      font-weight: 700;
+      opacity: 1;
+      // font-weight: 700;
 
       &::after {
         visibility: visible;

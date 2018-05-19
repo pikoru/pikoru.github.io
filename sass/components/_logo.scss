@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   height: 100%;
   width: 100%;
 
@@ -49,12 +50,7 @@
     width: 100%;
 
     @media only screen and (min-width: $bp-small) {
-
-
-      background-image: url('../img/logo-img-small.png');
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
+      // background-image: url('../img/logo-img-small.png');
       height: 50px;
       width: 50px;
       margin-bottom: -1rem;

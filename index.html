@@ -4,18 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="Newly formed team of game developers , we also do English language Let's-Plays focused on Chinese indie games. " />
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Pikoru Games | Let's Plays | Game Developers" />
+        <meta property="og:description" content="Newly formed team of game developers , we also do English language Let's-Plays focused on Chinese indie games. " />
+        <meta property="og:image" content="./img/logo-img.png" />
 
 
         <link rel="stylesheet" href="css/styles.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:100,300,400,700,900" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Roboto:100,300,400,700,900" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Lato:700,900|Roboto:100,300,500,700" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" href="img/logo-img.png" type="image/x-icon">
         <link rel="icon" href="img/logo-img.png" type="image/x-icon">
-        <title>Game Developers</title>
+        <title>Pikoru Games | Let's Plays | Game Developers</title>
 
 
     </head>
@@ -31,13 +32,22 @@
 
         <nav class="navigation__nav" id="nav">
           <ul class="navigation__list">
+            <noscript><a class="navigation__link" href="#about"><li class="navigation__item">About</li></a>
+              <a class="navigation__link" href="#team"><li class="navigation__item">Team</li>
+              <a class="navigation__link" href="#games"><li class="navigation__item">Games</li></a>
+              <a class="navigation__link" href="#pikoruplay"><li class="navigation__item">PikoruPlay</li></a>
+              <a class="navigation__link" href="#contact"><li class="navigation__item">Contact</li></a>
+          </noscript>
 
             <a class="navigation__link"><li class="navigation__item" onclick="Scroll('about')">About</li></a>
             <a class="navigation__link"><li class="navigation__item" onclick="Scroll('team')">Team</li>
             <a class="navigation__link"><li class="navigation__item" onclick="Scroll('games')">Games</li></a>
+            <a class="navigation__link"><li class="navigation__item" onclick="Scroll('pikoruplay')">PikoruPlay</li></a>
             <a class="navigation__link"><li class="navigation__item"  onclick="Scroll('contact')">Contact</li></a>
           </ul>
         </nav>
+
+
       </div>
 
 
@@ -50,8 +60,7 @@
           <div class="logo">
             <a href="/" class="logo__image"></a>
             <!-- <a href="/" class="logo__image"><img src="img/logo-img.png" alt="image of logo"></a> -->
-            <!-- <a href="/" class="logo__image"><img src="img/circleblack.png" alt="image of logo"></a> -->
-            <a href="/"><h1 class="logo__title u-show-desktop"><span class="logo__title-first">Pikoru</span>  <span class="logo__title-second">Studios</span></h1> </a>
+            <a href="/"><h1 class="logo__title u-show-desktop"><span class="logo__title-first">Pikoru</span>  <span class="logo__title-second">Games</span></h1> </a>
           </div>
 
 
@@ -60,6 +69,7 @@
               <li><a href="#about" class="menu__list-item menu__list-item--active">About</a></li>
               <li><a href="#team" class="menu__list-item">Team</a></li>
               <li><a href="#games" class="menu__list-item">Games</a></li>
+              <li><a href="#pikoruplay" class="menu__list-item">PikoruPlay</a></li>
               <li><a href="#contact" class="menu__list-item u-bg-primary">Contact</a></li>
             </ul>
           </nav>
@@ -71,7 +81,8 @@
 
       <div class="content-container">
 
-        <section class="section" id="about" class="about">
+        <section class="section lazy" id="about">
+        <noscript><section class="section visible" id="about"></noscript>
           <div class="section__content">
 
                 <h3 class="section__heading section__heading--medium">An introduction is in order…</h3>
@@ -83,13 +94,14 @@
                 We're a newly formed team of game creators, brought together
                 by our unifying enthusiasm for great innovation and style.
                 We also create our own game media content: check out <a href="#pikoruplay" class="link" >PikoruPlay</a>
-                which is our let's play-service we do in cooperation with <a href="https://www.indienova.com/" class="link" target="_blank">Indienova</a> .
+                which is our let's play-service we do in cooperation with <a href="https://www.indienova.com/en" class="link" target="_blank">Indienova</a> .
                 </p>
 
             </div>
         </section>
 
-        <section class="section team" id="team">
+        <section class="section team lazy" id="team">
+        <noscript><section class="section team visible" id="team"></noscript>
           <div class="section__content">
             <h2 class="section__heading ">The Team</h2>
               <div class="team__content">
@@ -137,14 +149,11 @@
               Per-Emil is a developer, music composer and living game
               factory who think outside the box by default.
 
-              <ul class="team__member-social">
-                <li class="team__member-social__item"><a href="https://twitter.com/limerep" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
-                <li class="team__member-social__item"><a href="https://soundcloud.com/limerep" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
-              </ul>
-
-
+                <ul class="team__member-social">
+                  <li class="team__member-social__item"><a href="https://twitter.com/limerep" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+                  <li class="team__member-social__item"><a href="https://soundcloud.com/limerep" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                </ul>
               </p>
-
             </div>
             </div>
         </div>
@@ -152,7 +161,8 @@
         </section>
 
 
-        <section class="section work" id="games">
+        <section class="section work lazy" id="games">
+          <noscript><section class="section work visible" id="games"></noscript>
           <div class="section__content">
             <h2 class="section__heading ">Free demos</h2>
             <p class="section__paragraph">
@@ -163,7 +173,10 @@
 
               <div class="work__item">
                 <h2 class="work__header">Decoy</h2>
-                <a href="https://44gone.itch.io/decoy-the-game" target="_blank"><img src="img/decoy.gif" alt="" class="work__img"></a>
+                <a href="https://44gone.itch.io/decoy-the-game" target="_blank">
+                  <img src="img/decoy.png" data-src="img/decoy.gif" alt="" class="work__img lazy-img">
+                  <noscript><img src="img/decoy.gif" alt="" class="work__img"></noscript>
+                </a>
 
                     <p class="section__paragraph">
                       Decoy is a fast-paced, first-person action game where you aim to
@@ -175,7 +188,10 @@
                 </div>
               <div class="work__item">
                   <h2 class="work__header">Grandmas Balls</h2>
-                  <a href="https://kabiscube.itch.io/grandmasballs" target="_blank"><img src="img/grandmasballs.gif" alt="" class="work__img"></a>
+                  <a href="https://kabiscube.itch.io/grandmasballs" target="_blank">
+                    <img src="img/grandmasballs.png" data-src="img/grandmasballs.gif" alt="" class="work__img lazy-img">
+                    <noscript><img src="img/grandmasballs.gif" alt="" class="work__img"></noscript>
+                  </a>
 
                   <p class="section__paragraph">
                     Grandma's Balls is a multiplayer party game for 2-4 players
@@ -187,16 +203,35 @@
             </div>
         </section>
 
-        <section class="section" id="pikoruplay">
+        <section class="section lazy" id="pikoruplay" class="pikoruplay">
+          <noscript><section class="section lazy" id="pikoruplay" class="pikoruplay"></noscript>
           <div class="section__content">
             <h1 class="section__heading">PikoruPlay</h1>
-            <p class="section__paragraph">We do English language Let's-Plays focused on Chinese indie games! <a href="#contact" class="link" >Contact us</a> if you want us to take a look at your game.</p>
-            <p class="section__paragraph">PikoruPlay is done in cooperation with the Chinese indie game portal <a href="https://www.indienova.com/" class="link" target="_blank">Indienova</a>.</p>
+            <p class="section__paragraph">
+              We do English language Let's-Plays focused on Chinese indie games!
+              <a href="#contact" class="link" >Contact us</a> if you want us to take a look at your game.
+            </p>
+            <p class="section__paragraph">
+              PikoruPlay is done in cooperation with the Chinese indie game portal
+               <a href="https://www.indienova.com/" class="link" target="_blank">Indienova</a>.
+             </p>
+
+               <p class="section__paragraph">
+                 我们为中国独立游戏做英文实况
+                 如果你想让我们玩你的游戏，
+                 请联系我们
+
+               </p>
+               <img src="img/wechat-qr.jpg" alt="Image of QR-code" class="pikoruplay__img">
+
+
+
           </div>
         </section>
 
 
-        <section class="section contact" id="contact">
+        <section class="section contact lazy" id="contact">
+        <noscript><section class="section contact visible" id="contact"></noscript>
           <div class="section__content">
             <h2 class="section__heading contact__heading">Contact</h2>
             <div class="section__row">
@@ -216,7 +251,7 @@
                 <a href="mailto:piroku.company@gmail.com" class="contact__mail" target="_top">email us</a>
 
               </div>
-              <div class="section__col">
+              <!-- <div class="section__col">
 
                 <div class="contact__qr">
                   <p class="contact__text">
@@ -226,7 +261,7 @@
                   </p>
                   <img src="img/wechat-qr.jpg" alt="Image of QR-code">
                 </div>
-              </div>
+              </div> -->
 
 
             </div>
@@ -236,10 +271,10 @@
         </section>
 
       </div>
-
+      <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
       <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-      <script src="./scripts/index.js"></script>
-      <!-- <script src="./scripts/index.min.js"></script> -->
+      <!-- <script src="./scripts/index.js"></script> -->
+      <script src="./scripts/index.min.js"></script>
       <script>
 
 

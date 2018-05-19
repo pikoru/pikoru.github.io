@@ -1,5 +1,6 @@
 "use strict";
 
+// import { Scroll } from './scroll';
 console.log('functions are loaded correctly');
 var config = {
   apiKey: "AIzaSyDFWC9p9viBaemsqO3WLDCPE2tjCH65Ey4",
@@ -130,4 +131,51 @@ function hideOnClickOutside(element) {
   document.addEventListener('click', outsideClickListener);
 }
 
+//lazy Loading
+var lazyLoadSections = function lazyLoadSections() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy"));
+
+    if ("IntersectionObserver" in window) {
+      var lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            lazyBackgroundObserver.unobserve(entry.target);
+          }
+        });
+      });
+
+      lazyBackgrounds.forEach(function (lazyBackground) {
+        lazyBackgroundObserver.observe(lazyBackground);
+      });
+    }
+  });
+};
+
+var lazyLoadImages = function lazyLoadImages() {
+  document.addEventListener("DOMContentLoaded", function () {
+    var lazyImages = [].slice.call(document.querySelectorAll(".lazy-img"));
+
+    if ("IntersectionObserver" in window) {
+      var lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var lazyImage = entry.target;
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy-img");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function (lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    }
+  });
+};
+
 hideOnClickOutside(document.getElementById('nav'));
+lazyLoadSections();
+lazyLoadImages();

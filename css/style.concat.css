@@ -76,6 +76,12 @@ ORDER: Base + typograpfy > general layout + grid > page layout > components
   100% {
     opacity: 1; } }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
 *,
 *::after,
 *::before {
@@ -99,13 +105,12 @@ img {
 
 a,
 a:visited {
-  color: inherit;
-  text-decoration: none; }
+  color: inherit; }
   a:active,
   a:visited:active {
     color: goldenrod;
     color: #4717F6;
-    color: #A239CA; }
+    text-decoration: none; }
 
 body {
   color: #E7DFDD;
@@ -180,7 +185,7 @@ h1, h2, h3, h4, h5 {
   transition: transform .5s; }
 
 .navigation__nav {
-  background-color: white;
+  background-color: #E7DFDD;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   visibility: hidden;
@@ -195,7 +200,8 @@ h1, h2, h3, h4, h5 {
   list-style: none; }
 
 .navigation__link {
-  color: #777; }
+  color: #777;
+  color: #0E0B16; }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none; }
   .navigation__link:active {
@@ -235,7 +241,7 @@ h1, h2, h3, h4, h5 {
   opacity: 1;
   right: 1rem;
   top: 8rem;
-  width: 8rem; }
+  width: auto; }
   @media only screen and (min-width: 62.5em) {
     .navigation__checkbox:checked ~ .navigation__nav {
       width: 12rem; } }
@@ -288,15 +294,8 @@ h1, h2, h3, h4, h5 {
 .section {
   color: #E7DFDD;
   margin: 2rem auto;
-  padding: 2rem; }
-  @media only screen and (min-width: 37.5em) {
-    .section:nth-child(1) {
-      animation: moveInRight 5s; } }
-  @media only screen and (min-width: 37.5em) {
-    .section:not(:first-child):not(:last-child) {
-      animation: opacityChange 5s;
-      animation-delay: 2s;
-      animation-fill-mode: backwards; } }
+  padding: 2rem;
+  visibility: hidden; }
   @media only screen and (min-width: 37.5em) {
     .section__row {
       display: flex;
@@ -304,12 +303,11 @@ h1, h2, h3, h4, h5 {
   .section__col {
     border: 1px solid white;
     padding: 1rem;
-    margin-bottom: 1rem; }
+    width: 90%;
+    max-width: 450px; }
     @media only screen and (min-width: 37.5em) {
       .section__col {
-        margin: 0 1rem 1rem 1rem;
-        width: 50%;
-        padding: 1rem; } }
+        padding: 3rem; } }
     @media only screen and (min-width: 37.5em) {
       .section__col-1-of-3 {
         margin: 0 1rem 1rem 1rem;
@@ -325,9 +323,8 @@ h1, h2, h3, h4, h5 {
     display: flex;
     justify-content: center;
     font-size: 3.2rem;
-    font-weight: 100;
     font-weight: 900;
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
     margin-bottom: 1rem;
     padding: 3.2rem 0; }
     @media only screen and (min-width: 37.5em) {
@@ -347,15 +344,21 @@ h1, h2, h3, h4, h5 {
           width: 65%; } }
     .section__heading--medium {
       text-transform: none;
-      letter-spacing: .3rem;
-      font-size: 3.2rem;
-      font-weight: 700; }
+      text-align: center; }
+      @media only screen and (min-width: 37.5em) {
+        .section__heading--medium {
+          font-size: 3.2rem;
+          letter-spacing: .3rem; } }
   .section__paragraph {
     margin: 1rem auto;
     width: 90%; }
     @media only screen and (min-width: 31.25em) {
       .section__paragraph {
         max-width: 450px; } }
+
+.visible {
+  animation: fadeIn 2s;
+  visibility: visible; }
 
 .contact {
   padding-bottom: 5rem; }
@@ -431,13 +434,17 @@ h1, h2, h3, h4, h5 {
 .logo {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%; }
   @media only screen and (min-width: 37.5em) {
     .logo {
       flex-direction: row;
-      align-items: flex-end; } }
+      align-items: flex-end;
+      height: auto;
+      width: auto; } }
   .logo__title {
-    animation: moveInTop 3s;
     font-size: 2.4rem;
     margin-left: 1rem;
     text-transform: uppercase; }
@@ -453,35 +460,45 @@ h1, h2, h3, h4, h5 {
   .logo__image {
     animation-name: float;
     animation-duration: 5s;
-    animation-iteration-count: infinite; }
+    animation-iteration-count: infinite;
+    background-image: url("../img/logo-img.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%; }
     @media only screen and (min-width: 37.5em) {
       .logo__image {
-        width: 5rem;
-        margin-bottom: -1.5rem; } }
+        height: 50px;
+        width: 50px;
+        margin-bottom: -1rem; } }
     .logo__image:active {
       color: #4717F6; }
 
-.logo-2 {
-  position: absolute;
-  right: 50%;
-  top: 75px;
-  transform: translate(50%, 0); }
-  .logo-2__image {
-    border-radius: 50%;
-    height: 15rem;
-    width: 15rem; }
+.link {
+  color: #4717F6;
+  font-weight: 700;
+  display: inline-block;
+  transition: all .2s; }
+  .link:hover {
+    transform: translateY(-1px); }
+  .link:active {
+    transform: translateY(0); }
 
 .menu {
   align-self: flex-end; }
   .menu li {
-    display: inline-block;
-    margin: 0 1rem; }
+    display: inline-block; }
+    @media only screen and (min-width: 50em) {
+      .menu li {
+        margin: 0 .3rem; } }
   .menu__list-item {
     display: inline-block;
     font-weight: 500;
-    opacity: 0.9;
+    opacity: .9;
+    padding: .5rem;
     position: relative;
-    padding: .5rem; }
+    text-decoration: none; }
     .menu__list-item::after {
       content: "";
       background-color: #E7DFDD;
@@ -500,6 +517,15 @@ h1, h2, h3, h4, h5 {
         visibility: visible;
         width: 80%; }
 
+.pikoruplay__img {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 400px; }
+  @media only screen and (min-width: 50em) {
+    .pikoruplay__img {
+      width: 35%; } }
+
 .team {
   overflow: auto; }
   .team__content {
@@ -511,12 +537,12 @@ h1, h2, h3, h4, h5 {
     max-width: 30rem; }
     @media only screen and (min-width: 37.5em) {
       .team__member {
-        animation: opacityChange 3s; } }
+        animation: fadeIn 1s; } }
     .team__member:nth-child(2) {
-      animation-delay: 2.5s;
+      animation-delay: .3s;
       animation-fill-mode: backwards; }
     .team__member:nth-child(3) {
-      animation-delay: 3s;
+      animation-delay: .6s;
       animation-fill-mode: backwards; }
     @media only screen and (min-width: 37.5em) {
       .team__member {
@@ -588,7 +614,8 @@ h1, h2, h3, h4, h5 {
     .work__img {
       display: block;
       margin: 2rem auto;
-      width: 75%; } }
+      width: 75%;
+      max-width: 640px; } }
 
 .work__text {
   margin: 0 1.7rem; }
@@ -652,3 +679,6 @@ h1, h2, h3, h4, h5 {
 
 .u-bg-secondary {
   background-color: #A239CA !important; }
+
+.u-bold {
+  font-weight: 700 !important; }
